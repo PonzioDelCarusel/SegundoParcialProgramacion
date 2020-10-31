@@ -16,13 +16,17 @@ _global_script_class_icons={
 [application]
 
 config/name="#3 - Race Track"
-run/main_scene="res://scenes/test.tscn"
+run/main_scene="res://scenes/screens/intro.tscn"
 config/icon="res://icon.png"
 
 [display]
 
 window/size/width=1920
 window/size/height=1080
+window/size/test_width=960
+window/size/test_height=540
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
 
 [physics]
 

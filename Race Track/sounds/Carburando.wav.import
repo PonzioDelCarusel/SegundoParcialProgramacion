@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Carburando.wav-ccbfffde5d438c27e098a69530c66408.sample"
+
+[deps]
+
+source_file="res://sounds/Carburando.wav"
+dest_files=[ "res://.import/Carburando.wav-ccbfffde5d438c27e098a69530c66408.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

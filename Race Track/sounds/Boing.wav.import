@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Boing.wav-89106c3da62e30a867db7b8e08e3f0be.sample"
+
+[deps]
+
+source_file="res://sounds/Boing.wav"
+dest_files=[ "res://.import/Boing.wav-89106c3da62e30a867db7b8e08e3f0be.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
