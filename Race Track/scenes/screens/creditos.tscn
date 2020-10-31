@@ -1,3 +1,34 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/screens/sceneChanger.gd" type="Script" id=2]
+[ext_resource path="res://images/game/background.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 1 )
 
 [node name="Node2D" type="Node2D"]
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 958, 558 )
+scale = Vector2( 1.021, 1.021 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="menu" type="Button" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 14.0
+margin_top = 950.0
+margin_right = 350.0
+margin_bottom = 1070.0
+custom_fonts/font = SubResource( 1 )
+text = "Menu"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+target_scene = "res://scenes/screens/menu.tscn"
