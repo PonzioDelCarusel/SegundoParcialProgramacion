@@ -161,6 +161,7 @@ autoplay = "LogoAnim"
 anims/LogoAnim = SubResource( 1 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 994.501, 543.272 )
 stream = ExtResource( 3 )
 
 [node name="barraDeCarga" type="Sprite" parent="."]
