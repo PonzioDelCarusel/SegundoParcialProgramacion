@@ -163,6 +163,7 @@ anims/LogoAnim = SubResource( 1 )
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 994.501, 543.272 )
 stream = ExtResource( 3 )
+area_mask = 1048575
 
 [node name="barraDeCarga" type="Sprite" parent="."]
 position = Vector2( 997.322, 958.709 )
