@@ -4,9 +4,14 @@ extends Node
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var level1 = load("res://scenes/levels/nivel1.tscn").instance()
-var level2 = load("res://scenes/levels/nivel2.tscn").instance()
-var level3 = load("res://scenes/levels/nivel3.tscn").instance()
+
+var levels = [
+	"res://scenes/levels/nivel1.tscn",
+	"res://scenes/levels/nivel2.tscn",
+	"res://scenes/levels/nivel3.tscn"
+	]
+var current_level = 0
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

@@ -7,7 +7,9 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	add_child(Globals.level1)
+	var level_scene = load (Globals.levels[Globals.current_level])
+	var level = level_scene.instance()
+	add_child(level)
 	pass # Replace with function body.
 
 

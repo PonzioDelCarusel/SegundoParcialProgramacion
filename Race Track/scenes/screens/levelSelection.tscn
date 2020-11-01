@@ -34,7 +34,9 @@ __meta__ = {
 }
 target_scene = "res://scenes/screens/menu.tscn"
 
-[node name="level1" type="TextureButton" parent="."]
+[node name="level1" type="TextureButton" parent="." groups=[
+"level1button",
+]]
 margin_left = 139.0
 margin_top = 105.0
 margin_right = 594.0
@@ -46,7 +48,9 @@ __meta__ = {
 }
 target_scene = "res://scenes/levels/game.tscn"
 
-[node name="level2" type="TextureButton" parent="."]
+[node name="level2" type="TextureButton" parent="." groups=[
+"level2button",
+]]
 margin_left = 719.866
 margin_top = 96.091
 margin_right = 1174.87
@@ -58,7 +62,9 @@ __meta__ = {
 }
 target_scene = "res://scenes/levels/game.tscn"
 
-[node name="level3" type="TextureButton" parent="."]
+[node name="level3" type="TextureButton" parent="." groups=[
+"level3button",
+]]
 margin_left = 1354.19
 margin_top = 106.782
 margin_right = 1809.19
