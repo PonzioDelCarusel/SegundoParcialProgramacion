@@ -2,7 +2,7 @@
 
 [ext_resource path="res://scenes/screens/intro.gd" type="Script" id=1]
 [ext_resource path="res://images/intro/logo.png" type="Texture" id=2]
-[ext_resource path="res://images/Boing.wav" type="AudioStream" id=3]
+[ext_resource path="res://sounds/Boing.wav" type="AudioStream" id=3]
 [ext_resource path="res://images/intro/barraDeCarga.png" type="Texture" id=4]
 [ext_resource path="res://images/intro/barraDeCargaFiller.png" type="Texture" id=5]
 [ext_resource path="res://images/intro/background.jpg" type="Texture" id=6]

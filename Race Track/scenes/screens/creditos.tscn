@@ -1,16 +1,161 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scenes/screens/sceneChanger.gd" type="Script" id=2]
 [ext_resource path="res://images/game/background.png" type="Texture" id=3]
+[ext_resource path="res://fonts/Uni_acc.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://images/intro/logo.png" type="Texture" id=5]
+[ext_resource path="res://sounds/credits.wav" type="AudioStream" id=6]
+[ext_resource path="res://images/bugs.png" type="Texture" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
 font_data = ExtResource( 1 )
 
+[sub_resource type="DynamicFont" id=2]
+size = 150
+font_data = ExtResource( 4 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "Creditos"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("RichTextLabel:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 10 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 420, 1092.24 ), Vector2( 420, -1800 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("RichTextLabel:rect_rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 10 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("RichTextLabel:rect_size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 10 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 940, 1263 ), Vector2( 940, 1263 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("logo:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 10, 15 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1060.06, 2713.94 ), Vector2( 1060.06, 480 ), Vector2( 990.167, 538.52 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("logo:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 10, 15 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("logo:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 10, 15 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( 1.73373, 1.73373 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("bugs:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 15, 17, 18.5, 19, 19.5, 20 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 305.504, 544.268 ), Vector2( 809.472, 209.129 ), Vector2( 1462.11, 481.272 ), Vector2( 1578.02, 637.502 ), Vector2( 1578.02, 637.502 ), Vector2( 1578.02, 637.502 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("bugs:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 15, 17, 18.5, 19, 19.5, 20 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 66.7378, 66.7378, 133.804, 206.566, 332.012 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("bugs:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 15, 17, 18.5, 19, 19.5, 20 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.146296, 0.146296 ), Vector2( 0.146296, 0.146296 ), Vector2( 0.146296, 0.146296 ), Vector2( 0.146296, 0.146296 ), Vector2( 0.146296, 0.146296 ), Vector2( 0.146296, 0.146296 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("bugs:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 15 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
 [node name="Node2D" type="Node2D"]
 
 [node name="background" type="Sprite" parent="."]
+modulate = Color( 0.564706, 0.564706, 0.564706, 1 )
 position = Vector2( 958, 558 )
 scale = Vector2( 1.021, 1.021 )
 texture = ExtResource( 3 )
@@ -32,3 +177,42 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 target_scene = "res://scenes/screens/menu.tscn"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 420.0
+margin_top = 1092.24
+margin_right = 1360.0
+margin_bottom = 2355.24
+custom_fonts/normal_font = SubResource( 2 )
+text = "d   
+           GABRIEL CORBANI
+	
+c   
+           TOMAS RADERO
+	
+g   
+           LAUTARO FALCO
+		
+q   
+           GORAN BLAZEVICH"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Creditos"
+anims/Creditos = SubResource( 3 )
+
+[node name="logo" type="Sprite" parent="."]
+position = Vector2( 1060.06, 2713.94 )
+texture = ExtResource( 5 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 927.042, 546.066 )
+stream = ExtResource( 6 )
+
+[node name="bugs" type="Sprite" parent="."]
+visible = false
+position = Vector2( 305.504, 544.268 )
+scale = Vector2( 0.146296, 0.146296 )
+texture = ExtResource( 7 )
