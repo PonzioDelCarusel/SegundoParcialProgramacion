@@ -8,6 +8,7 @@ extends Button
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+# warning-ignore:return_value_discarded
 	connect("pressed", self, "_on_button_pressed")
 	pass # Replace with function body.
 

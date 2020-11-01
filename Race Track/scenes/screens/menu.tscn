@@ -148,7 +148,7 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-target_scene = "res://scenes/screens/seleccionNivel.tscn"
+target_scene = "res://scenes/screens/levelSelection.tscn"
 
 [node name="creditos" type="Button" parent="."]
 margin_left = 25.0
