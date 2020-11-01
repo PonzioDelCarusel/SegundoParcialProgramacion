@@ -18,34 +18,175 @@ position = Vector2( 379.438, 434.182 )
 physics_material_override = SubResource( 1 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="freeshape"]
-polygon = PoolVector2Array( -241.661, -106.497, -246.15, 108.454, 385.796, 117.434, 2302.29, 139.545, 2354.29, -878.455, 1848.29, -964.455, 1818.29, -778.455, 1944.29, -692.455, 1954.29, -496.455, 1876.29, -314.455, 1696.29, -202.455, 1374.29, -130.455, 744.294, -156.455, 430.294, -110.455, 382.99, -40.8332, 321.815, -6.59811, 260.641, 15.2899, 196.1, 21.4634, 136.609, 10.2388, 90.5881, -0.985809, 29.9752, 5.18773, -54.2095, 9.67758, -132.782, 1.25911, -201.252, -58.2314 )
+position = Vector2( -1147.18, -126.016 )
+polygon = PoolVector2Array( -248.903, -111.882, -246.15, 108.454, -53.6683, 99.7682, 1014.26, 94.2942, 1044.9, -107.242, -209.216, -111.882 )
 
 [node name="CollisionPolygon2D2" type="Polygon2D" parent="freeshape"]
+position = Vector2( -1158.11, -132.743 )
 texture = ExtResource( 8 )
 texture_scale = Vector2( 4, 4 )
-polygon = PoolVector2Array( -241.661, -106.497, -246.15, 108.454, 385.796, 117.434, 2302.29, 139.545, 2354.29, -878.455, 1848.29, -964.455, 1818.29, -778.455, 1944.29, -692.455, 1954.29, -496.455, 1876.29, -314.455, 1696.29, -202.455, 1374.29, -130.455, 744.294, -156.455, 430.294, -110.455, 382.99, -40.8332, 321.815, -6.59811, 260.641, 15.2899, 196.1, 21.4634, 136.609, 10.2388, 90.5881, -0.985809, 29.9752, 5.18773, -54.2095, 9.67758, -132.782, 1.25911, -201.252, -58.2314 )
+polygon = PoolVector2Array( -240.51, -104.55, -243.18, 118.368, -49.0439, 106.695, 1055.32, 129.467, 1063.92, -99.8743, -199.13, -104.55 )
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="freeshape"]
+position = Vector2( 2760.89, 380.003 )
+rotation = 1.57079
+polygon = PoolVector2Array( -248.903, -111.882, -246.15, 108.454, -53.6683, 99.7682, 1014.26, 94.2942, 1046.43, 100.838, 1075.83, 116.875, 1109.69, 140.929, 1139.15, 166.371, 1194.78, 231.064, 1263.75, 330.957, 1320.83, 433.229, 1396.94, 597.34, 1456.4, 749.559, 1525.37, 925.561, 1575.32, 1063.51, 1651.43, 1334.65, 1722.78, 1548.71, 1782.24, 1769.9, 1853.16, 2087.55, 1919.09, 2370.85, 2001.05, 2712.96, 2073.72, 3024.5, 2117.98, 3254.03, 2130.45, 3478.53, 2132.23, 3726.2, 2134.01, 4058.84, 2112.63, 4361.74, 2091.25, 4561.3, 2059.17, 4693.16, 2024.82, 4789.88, 1968.93, 4895.72, 1922.55, 4953.99, 1851.2, 5018.21, 1750.12, 5082.43, 1709.05, 5102.87, 1660.78, 5124.76, 1614.2, 5135.98, 1560.88, 5146.08, 1522.65, 5152.69, 1488.79, 5157.15, 1447.37, 5159.38, 1414.4, 5158.48, 1385.51, 5148.67, 1363.62, 5139.33, 1347.14, 5126.41, 1332.78, 5111.22, 1312.37, 5087.37, 1304.36, 5072.68, 1295.68, 5058, 1286.95, 5042.31, 1279, 5028.63, 1268.32, 5009.95, 1262.31, 5004.61, 1257.05, 4999.09, 1257.4, 5007.57, 1287.45, 5200.8, 1587.26, 5307.72, 2061.69, 5386.86, 2449.37, 4956.37, 2424.44, 4555.96, 2406.62, 4169.31, 2404.84, 3478.53, 2287.25, 2860.25, 1839.33, -82.8855, -209.216, -111.882 )
+
+[node name="CollisionPolygon2D8" type="Polygon2D" parent="freeshape"]
+position = Vector2( 2749.96, 373.276 )
+rotation = 1.57079
+texture = ExtResource( 8 )
+texture_scale = Vector2( 4, 4 )
+polygon = PoolVector2Array( -240.51, -104.55, -243.18, 118.368, -49.0439, 106.695, 1041.9, 82.4294, 1184.6, 196.594, 1317.79, 379.732, 1643.62, 1237.05, 1799.62, 1781.05, 2011.62, 2713.05, 2127.62, 3233.05, 2143.62, 3425.05, 2139.62, 3837.05, 2131.62, 4222.26, 2107.62, 4506.26, 2070.39, 4670.08, 2013.24, 4809.77, 1957.68, 4916.13, 1870.38, 4995.5, 1756.08, 5063.76, 1683.96, 5111.33, 1542.44, 5138.68, 1482.97, 5147.3, 1424.04, 5148.42, 1387.56, 5137.76, 1367.36, 5128.22, 1354.45, 5116.43, 1316.92, 5073.93, 1295.35, 5035.39, 1287.93, 5021.95, 1278.73, 5007.81, 1273.43, 4997.21, 1263.77, 4987.48, 1266.44, 5026.68, 1248.94, 5104.65, 1301.7, 5235.97, 1619.74, 5440.74, 2279.93, 5339.97, 2843.62, 3825.05, 3035.63, -58.9463, -199.13, -104.55 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="freeshape"]
+position = Vector2( 151.295, -121.215 )
+polygon = PoolVector2Array( -248.903, -111.882, -246.15, 108.454, -53.6683, 99.7682, 2.23709, 97.4073, 41.0845, -122.891, 66.7042, -265.056, 61.2671, -254.717, 55.2054, -247.978, 37.2671, -230.467, 25.2671, -219.467, 8.76709, -203.967, -7.93399, -189.152, -30.2079, -171.121, -48.5926, -159.454, -65.5632, -150.261, -83.5944, -141.776, -107.99, -131.169, -136.274, -124.098, -165.619, -118.795, -187.893, -115.967, -207.338, -113.492 )
+
+[node name="CollisionPolygon2D4" type="Polygon2D" parent="freeshape"]
+position = Vector2( 198.251, -129.892 )
+texture = ExtResource( 8 )
+texture_scale = Vector2( 4, 4 )
+polygon = PoolVector2Array( -296.872, -105.215, -315.872, 124.785, -49.0439, 106.695, -39.0624, 62.2433, -2.29285, -114.533, 20.3108, -257.04, 5.36536, -238.923, -14.8512, -220.787, -32.8932, -203.79, -47.0583, -188.063, -68.2475, -169.787, -86.8718, -156.215, -114.872, -142.215, -143.872, -127.215, -180.872, -115.215, -213.872, -106.215 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="freeshape"]
+position = Vector2( 1904.54, -666.459 )
+polygon = PoolVector2Array( -248.903, -111.882, -246.15, 108.454, -53.6683, 99.7682, 2.23709, 97.4073, 41.0845, -122.891, 41.8983, -252.922, 29.8775, -234.537, 20.3316, -220.395, 7.25015, -204.485, -7.93399, -189.152, -30.2079, -171.121, -48.5926, -159.454, -65.5632, -150.261, -83.5944, -141.776, -107.99, -131.169, -136.274, -124.098, -165.619, -118.795, -187.893, -115.967, -207.338, -113.492 )
+
+[node name="CollisionPolygon2D6" type="Polygon2D" parent="freeshape"]
+position = Vector2( 1945.77, -673.466 )
+texture = ExtResource( 8 )
+texture_scale = Vector2( 4, 4 )
+polygon = PoolVector2Array( -296.872, -105.215, -315.872, 124.785, -49.0439, 106.695, -39.0624, 62.2433, -2.29285, -114.533, -5.56409, -244.876, -20.9105, -220.91, -32.8932, -203.79, -47.0583, -188.063, -68.2475, -169.787, -86.8718, -156.215, -114.872, -142.215, -143.872, -127.215, -181.69, -115.426, -216.396, -110.086 )
 
 [node name="car" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1999.08, -577.196 )
+position = Vector2( -3698.29, 147.626 )
 
 [node name="bounce" parent="." instance=ExtResource( 3 )]
-position = Vector2( 336.943, 463.873 )
+position = Vector2( -1778.05, 134.241 )
+rotation = 0.140093
+
+[node name="bounce2" parent="." instance=ExtResource( 3 )]
+position = Vector2( -1635.51, 155.622 )
+rotation = 0.169775
+
+[node name="bounce3" parent="." instance=ExtResource( 3 )]
+position = Vector2( -1494.74, 184.131 )
+rotation = 0.246775
+
+[node name="bounce4" parent="." instance=ExtResource( 3 )]
+position = Vector2( -1355.76, 214.421 )
+rotation = 0.19716
 
 [node name="floor" parent="." instance=ExtResource( 4 )]
-position = Vector2( 0, 356 )
+position = Vector2( -1735.47, -114.395 )
+
+[node name="floor9" parent="." instance=ExtResource( 4 )]
+position = Vector2( -2119.04, -337.717 )
+rotation = 1.57079
+scale = Vector2( 1.84, 1 )
+
+[node name="floor8" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1079.77, -112.613 )
 
 [node name="floor2" parent="." instance=ExtResource( 4 )]
-position = Vector2( -726.535, 429.999 )
+position = Vector2( -1148.82, 228.656 )
 
 [node name="floor3" parent="." instance=ExtResource( 4 )]
-position = Vector2( -2384.7, 420.1 )
+position = Vector2( -2276.82, 228.317 )
+
+[node name="floor15" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1895.67, 231.304 )
+rotation = 1.57079
+scale = Vector2( 0.32, 1 )
+
+[node name="floor16" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1897.35, 142.616 )
+rotation = 1.57079
+scale = Vector2( 0.32, 1 )
+
+[node name="floor10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1651.92, -331.051 )
+scale = Vector2( 2.97994, 0.434166 )
+
+[node name="floor21" parent="." instance=ExtResource( 4 )]
+position = Vector2( -688.782, 2351.34 )
+scale = Vector2( 2.97994, 0.434166 )
+
+[node name="floor23" parent="." instance=ExtResource( 4 )]
+position = Vector2( 87.3289, 2351.34 )
+scale = Vector2( 2.97994, 0.434166 )
+
+[node name="floor24" parent="." instance=ExtResource( 4 )]
+position = Vector2( 498.063, 1978.41 )
+rotation = 1.57079
+scale = Vector2( 2.97994, 0.434166 )
+
+[node name="floor25" parent="." instance=ExtResource( 4 )]
+position = Vector2( 157.885, 1678.55 )
+rotation = 1.57079
+scale = Vector2( 2.97994, 0.434166 )
+
+[node name="floor27" parent="." instance=ExtResource( 4 )]
+position = Vector2( 281.702, 1192.8 )
+rotation = 2.35619
+scale = Vector2( 0.899941, 0.434166 )
+
+[node name="floor28" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1261.92, 1295.26 )
+rotation = 1.57079
+scale = Vector2( 2.21994, 0.434166 )
+
+[node name="floor26" parent="." instance=ExtResource( 4 )]
+position = Vector2( 868.732, 1570.94 )
+scale = Vector2( 2.97994, 0.434166 )
+
+[node name="floor11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2989.99, -759.278 )
+scale = Vector2( 2.97994, 0.434166 )
+
+[node name="floor17" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3393.62, 10.9827 )
+scale = Vector2( 2.97994, 0.434166 )
+
+[node name="floor19" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2616.88, -87.7941 )
+rotation = 1.57079
+scale = Vector2( 5.01646, 0.434143 )
+
+[node name="floor18" parent="." instance=ExtResource( 4 )]
+position = Vector2( 5008.14, 14.3463 )
+scale = Vector2( 2.97994, 0.434166 )
+
+[node name="floor12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3662.75, -759.278 )
+scale = Vector2( 2.97994, 0.434166 )
+
+[node name="floor13" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4544.64, -662.279 )
+rotation = 1.57079
+scale = Vector2( 2.97994, 0.434166 )
+
+[node name="floor14" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3828.56, -472.467 )
+rotation = 1.57079
+scale = Vector2( 2.09994, 0.434166 )
+
+[node name="floor20" parent="." instance=ExtResource( 4 )]
+position = Vector2( 3023.75, 288.015 )
+rotation = 1.57079
+scale = Vector2( 2.09994, 0.434166 )
+
+[node name="floor22" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2642.75, 673.03 )
+rotation = 1.0472
+scale = Vector2( 2.09994, 0.434166 )
 
 [node name="floor4" parent="." instance=ExtResource( 4 )]
-position = Vector2( -3074.84, 346.276 )
+position = Vector2( -2994.61, 229.644 )
 
 [node name="floor5" parent="." instance=ExtResource( 4 )]
-position = Vector2( -3292.84, 286.276 )
-rotation = 0.526807
+position = Vector2( -3255.08, 229.644 )
 
 [node name="floor6" parent="." instance=ExtResource( 4 )]
 position = Vector2( -3815.29, 132.469 )
@@ -56,34 +197,113 @@ position = Vector2( -3516.18, 228.978 )
 rotation = -0.00830221
 
 [node name="seesaw" parent="." instance=ExtResource( 5 )]
-position = Vector2( -1098.48, 403.2 )
+position = Vector2( -1173.32, -61.8492 )
 
 [node name="seesaw2" parent="." instance=ExtResource( 5 )]
-position = Vector2( -1558.83, 400.025 )
+position = Vector2( -1640.79, -63.2423 )
+
+[node name="seesaw4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1076.24, -252.13 )
+rotation = 1.57079
+scale = Vector2( 1.52, 1 )
+
+[node name="seesaw5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4024.49, -492.552 )
+scale = Vector2( 0.72, 1 )
+
+[node name="seesaw6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4355.59, -491.758 )
+scale = Vector2( 0.72, 1 )
 
 [node name="seesaw3" parent="." instance=ExtResource( 5 )]
-position = Vector2( -2019.17, 400.025 )
+position = Vector2( -2634.97, 209.74 )
+
+[node name="seesaw7" parent="." instance=ExtResource( 5 )]
+position = Vector2( -307.894, 2102.89 )
+rotation = 1.57079
 
 [node name="zerograv" parent="." instance=ExtResource( 7 )]
-position = Vector2( -218.633, 356.54 )
+position = Vector2( -3441.39, 1455.94 )
+rotation = 1.57079
 linear_damp = 1.0
 
 [node name="zerograv2" parent="." instance=ExtResource( 7 )]
-position = Vector2( -364.949, 388.494 )
+position = Vector2( -3440.94, 1316.38 )
+rotation = 1.57079
+linear_damp = 1.0
+
+[node name="zerograv9" parent="." instance=ExtResource( 7 )]
+position = Vector2( -3440.94, 1178.32 )
+rotation = 1.57079
 linear_damp = 1.0
 
 [node name="zerograv3" parent="." instance=ExtResource( 7 )]
-position = Vector2( -506.22, 408.676 )
+position = Vector2( 3851.8, 23.9489 )
+rotation = 3.14159
+linear_damp = 1.0
+
+[node name="zerograv4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3992.91, 25.2088 )
+rotation = 3.14159
+linear_damp = 1.0
+
+[node name="zerograv5" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4134.02, 26.4688 )
+rotation = 3.14159
+linear_damp = 1.0
+
+[node name="zerograv6" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4275.13, 27.7287 )
+rotation = 3.14159
+linear_damp = 1.0
+
+[node name="zerograv7" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4416.24, 28.9886 )
+rotation = 3.14159
+linear_damp = 1.0
+
+[node name="zerograv8" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4553.57, 28.9886 )
+rotation = 3.14159
 linear_damp = 1.0
 
 [node name="magnet" parent="." instance=ExtResource( 1 )]
-position = Vector2( -2877.34, 142.148 )
+position = Vector2( -2087.62, -65.6147 )
 
 [node name="magnet2" parent="." instance=ExtResource( 1 )]
-position = Vector2( -2734.38, 143.83 )
+position = Vector2( -1945.83, -64.3219 )
 
 [node name="magnet3" parent="." instance=ExtResource( 1 )]
-position = Vector2( -2588.07, 147.193 )
+position = Vector2( 555.858, 2262.95 )
+rotation = 1.57079
+
+[node name="magnet4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 555.97, 2123.46 )
+rotation = 1.57079
+
+[node name="magnet5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 555.97, 1985.46 )
+rotation = 1.57079
+
+[node name="magnet6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 98.9862, 1991.45 )
+rotation = 4.71238
+
+[node name="magnet7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 98.9862, 1854.78 )
+rotation = 4.71238
+
+[node name="magnet8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 97.9267, 1717.05 )
+rotation = 4.71238
+
+[node name="magnet9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 555.615, 1657.72 )
+rotation = 7.85397
+
+[node name="magnet10" parent="." instance=ExtResource( 1 )]
+position = Vector2( -599.727, 1114.69 )
+rotation = 7.03038
 
 [node name="goal" parent="." instance=ExtResource( 6 )]
 position = Vector2( -3712.93, 229.64 )
