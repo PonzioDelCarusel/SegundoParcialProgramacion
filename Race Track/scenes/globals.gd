@@ -10,7 +10,7 @@ var levels = [
 	"res://scenes/levels/nivel2.tscn",
 	"res://scenes/levels/nivel3.tscn"
 	]
-var current_level = 0
+var current_level = 2
 
 
 # Called when the node enters the scene tree for the first time.
