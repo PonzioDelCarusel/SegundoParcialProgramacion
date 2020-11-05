@@ -153,7 +153,7 @@ scale = Vector2( 0.844535, 0.844535 )
 texture = ExtResource( 7 )
 
 [node name="logo" type="Sprite" parent="."]
-position = Vector2( 994.234, 560.072 )
+position = Vector2( 1072.63, 200.149 )
 texture = ExtResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
