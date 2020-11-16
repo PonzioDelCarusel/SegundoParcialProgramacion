@@ -1,21 +1,26 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://images/game/background.png" type="Texture" id=1]
 [ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://scenes/screens/sceneChanger.gd" type="Script" id=3]
 [ext_resource path="res://scenes/screens/retry.gd" type="Script" id=4]
 [ext_resource path="res://scenes/screens/nextLevel.gd" type="Script" id=5]
-
-[sub_resource type="DynamicFont" id=2]
-size = 35
-font_data = ExtResource( 2 )
+[ext_resource path="res://images/intro/bandera.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
 font_data = ExtResource( 2 )
 
+[sub_resource type="DynamicFont" id=2]
+size = 35
+font_data = ExtResource( 2 )
+
 [sub_resource type="DynamicFont" id=3]
 size = 35
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 70
 font_data = ExtResource( 2 )
 
 [node name="Node2D" type="Node2D"]
@@ -30,7 +35,7 @@ margin_left = 1008.0
 margin_top = 679.098
 margin_right = 1344.0
 margin_bottom = 799.098
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = "Siguiente Nivel"
 script = ExtResource( 5 )
 __meta__ = {
@@ -42,7 +47,7 @@ margin_left = 573.917
 margin_top = 679.936
 margin_right = 909.917
 margin_bottom = 799.936
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 text = "Reintentar"
 script = ExtResource( 4 )
 __meta__ = {
@@ -61,3 +66,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 target_scene = "res://scenes/screens/levelSelection.tscn"
+
+[node name="bandera" type="Sprite" parent="."]
+position = Vector2( 961.62, 236.674 )
+scale = Vector2( 1.021, 1.021 )
+texture = ExtResource( 6 )
+
+[node name="mensajeFinalizacion" type="Label" parent="."]
+margin_left = 667.62
+margin_top = 363.674
+margin_right = 1225.62
+margin_bottom = 434.674
+custom_fonts/font = SubResource( 4 )
+text = "Nivel Finalizado"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

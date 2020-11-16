@@ -175,14 +175,15 @@ position = Vector2( 582.63, 958.62 )
 scale = Vector2( 1, 0.968751 )
 texture = ExtResource( 5 )
 
-[node name="Label" type="Label" parent="."]
+[node name="tituloJuego" type="Label" parent="."]
 margin_left = 1298.66
 margin_top = 312.63
 margin_right = 1868.66
 margin_bottom = 470.63
 custom_fonts/font = SubResource( 2 )
-text = "Inserte nombre
-     de juego"
+text = "Pisteanding
+Like a champ"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

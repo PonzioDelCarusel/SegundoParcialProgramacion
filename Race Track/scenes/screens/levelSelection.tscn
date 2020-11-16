@@ -57,6 +57,9 @@ margin_top = -50.0
 margin_right = 180.5
 custom_fonts/font = SubResource( 2 )
 text = "Puntaje: 00000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="level2" type="TextureButton" parent="."]
 margin_left = 719.866
