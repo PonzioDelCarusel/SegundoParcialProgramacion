@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="Cronometro" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 6.0
+margin_top = 14.0
+margin_right = 79.0
+margin_bottom = 33.0
+text = "00:00:00"
+__meta__ = {
+"_edit_use_anchors_": false
+}

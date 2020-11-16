@@ -1,9 +1,10 @@
 extends Node
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var tiempo_level1 = 0.0
+var tiempo_level2 = 0.0
+var tiempo_level3 = 0.0
+
 
 var levels = [
 	"res://scenes/levels/nivel1.tscn",
@@ -17,7 +18,13 @@ var current_level = 0
 func _ready():
 	pass # Replace with function body.
 
+var Minuto = 0.0
+var Segundo = 0.0
+var Centesima = 0.0
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func get_StrTiempo(tiempo):
+	Minuto = tiempo / 60
+	Segundo = int(tiempo) % 60
+	Centesima = (tiempo - int(tiempo)) * 100
+	var StrTiempo = "%02d:%02d:%02d" % [Minuto, Segundo, Centesima]
+	return StrTiempo	

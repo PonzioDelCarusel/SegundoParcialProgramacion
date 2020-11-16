@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -9,8 +9,14 @@
 [ext_resource path="res://scenes/platforms/zerograv.tscn" type="PackedScene" id=7]
 [ext_resource path="res://images/seamless.png" type="Texture" id=8]
 [ext_resource path="res://scenes/levels/levels.gd" type="Script" id=9]
+[ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://scenes/levels/ControlTiempo.gd" type="Script" id=11]
 
 [sub_resource type="PhysicsMaterial" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+font_data = ExtResource( 10 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 9 )
@@ -257,10 +263,23 @@ position = Vector2( -3033.52, 695.987 )
 [node name="goal" parent="." instance=ExtResource( 6 )]
 position = Vector2( -3712.14, 229.64 )
 
-[node name="goal2" parent="." instance=ExtResource( 6 )]
+[node name="metaFinal" parent="." instance=ExtResource( 6 )]
 position = Vector2( -1590.47, 4377.22 )
 
 [node name="PlayerSpawn" type="Position2D" parent="." groups=[
 "SpawnPoint",
 ]]
 position = Vector2( -3684.67, -265.81 )
+
+[node name="ControlTiempo" type="CanvasLayer" parent="."]
+script = ExtResource( 11 )
+
+[node name="labTiempo" type="Label" parent="ControlTiempo"]
+margin_right = 488.0
+margin_bottom = 61.0
+custom_fonts/font = SubResource( 2 )
+text = "Tiempo: 00:00:00"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="metaFinalizada" from="metaFinal" to="." method="_on_metaFinalizada"]
