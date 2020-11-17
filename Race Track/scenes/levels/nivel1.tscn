@@ -264,7 +264,7 @@ position = Vector2( -3033.52, 695.987 )
 position = Vector2( -3712.14, 229.64 )
 
 [node name="metaFinal" parent="." instance=ExtResource( 6 )]
-position = Vector2( -1590.94, 4394.68 )
+position = Vector2( -1590.47, 4377.22 )
 
 [node name="PlayerSpawn" type="Position2D" parent="." groups=[
 "SpawnPoint",

@@ -5,7 +5,7 @@
 [ext_resource path="res://scenes/screens/sceneChanger.gd" type="Script" id=3]
 [ext_resource path="res://scenes/screens/retry.gd" type="Script" id=4]
 [ext_resource path="res://scenes/screens/nextLevel.gd" type="Script" id=5]
-[ext_resource path="res://images/intro/bandera.png" type="Texture" id=6]
+[ext_resource path="res://scenes/screens/levelClear.gd" type="Script" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
@@ -20,10 +20,11 @@ size = 35
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 70
+size = 49
 font_data = ExtResource( 2 )
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 6 )
 
 [node name="background" type="Sprite" parent="."]
 position = Vector2( 958, 558 )
@@ -67,19 +68,13 @@ __meta__ = {
 }
 target_scene = "res://scenes/screens/levelSelection.tscn"
 
-[node name="bandera" type="Sprite" parent="."]
-position = Vector2( 961.62, 236.674 )
-scale = Vector2( 1.021, 1.021 )
-texture = ExtResource( 6 )
-
-[node name="mensajeFinalizacion" type="Label" parent="."]
-margin_left = 667.62
-margin_top = 363.674
-margin_right = 1225.62
-margin_bottom = 434.674
+[node name="Label" type="Label" parent="."]
+margin_left = 741.312
+margin_top = 460.129
+margin_right = 1152.31
+margin_bottom = 510.129
 custom_fonts/font = SubResource( 4 )
-text = "Nivel Finalizado"
-align = 1
+text = "Puntaje: 00:00:00"
 __meta__ = {
 "_edit_use_anchors_": false
 }
