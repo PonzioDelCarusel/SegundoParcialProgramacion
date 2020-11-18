@@ -6,7 +6,17 @@ func _ready():
 	var carPlayer = car.instance()
 	add_child(carPlayer)
 	carPlayer.global_position = get_tree().get_nodes_in_group("SpawnPoint")[0].global_position
+
+	
 	pass 
+
+func _input(event):
+	if(event.is_pressed()):
+		if(Input.is_key_pressed(KEY_M)):
+			Globals.myPlayer.queue_free()
+			ReSpawn()
+			
+
 
 
 
@@ -21,4 +31,14 @@ func _on_metaFinalizada():
 	newScene.Set_UltimoTiempo(tiempo)
 	
 	oldScene.queue_free()
-	pass # Replace with function body.
+	pass
+
+func ReSpawn():
+	var carPlayer = car.instance()
+	add_child(carPlayer)
+	carPlayer.global_position = Globals.bandera.global_position
+	
+	
+	pass
+	
+

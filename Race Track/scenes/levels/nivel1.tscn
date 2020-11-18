@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://scenes/levels/levels.gd" type="Script" id=9]
 [ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=10]
 [ext_resource path="res://scenes/levels/ControlTiempo.gd" type="Script" id=11]
+[ext_resource path="res://scenes/levels/CheckPoint.tscn" type="PackedScene" id=12]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -282,4 +283,13 @@ text = "Tiempo: 00:00:00"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Alpha" parent="." instance=ExtResource( 12 )]
+position = Vector2( -3147.15, -59.5727 )
+
+[node name="Beta" parent="." instance=ExtResource( 12 )]
+position = Vector2( -2795.53, -66.605 )
+
+[node name="Gama" parent="." instance=ExtResource( 12 )]
+position = Vector2( -1287.2, -41.8781 )
 [connection signal="metaFinalizada" from="metaFinal" to="." method="_on_metaFinalizada"]

@@ -36,6 +36,10 @@ var levels = [
 var current_level = 0
 var fileName = "res://SaveScores.cfg"
 
+var bandera  = null
+var myPlayer = null
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#. Carga los datos desde un archivo
