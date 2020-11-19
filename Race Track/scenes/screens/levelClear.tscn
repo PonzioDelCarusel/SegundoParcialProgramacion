@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://images/game/background.png" type="Texture" id=1]
 [ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scenes/screens/retry.gd" type="Script" id=4]
 [ext_resource path="res://scenes/screens/nextLevel.gd" type="Script" id=5]
 [ext_resource path="res://scenes/screens/levelClear.gd" type="Script" id=6]
+[ext_resource path="res://images/intro/bandera.png" type="Texture" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 35
@@ -20,6 +21,14 @@ size = 35
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=4]
+size = 49
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 85
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
 size = 49
 font_data = ExtResource( 2 )
 
@@ -69,12 +78,41 @@ __meta__ = {
 target_scene = "res://scenes/screens/levelSelection.tscn"
 
 [node name="Label" type="Label" parent="."]
-margin_left = 741.312
-margin_top = 460.129
-margin_right = 1152.31
-margin_bottom = 510.129
+margin_left = 970.0
+margin_top = 460.0
+margin_right = 1184.0
+margin_bottom = 510.0
 custom_fonts/font = SubResource( 4 )
-text = "Puntaje: 00:00:00"
+text = "00:00:00"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bandera" type="Sprite" parent="."]
+position = Vector2( 976.591, 285.288 )
+scale = Vector2( 0.719411, 0.719411 )
+texture = ExtResource( 7 )
+
+[node name="nivelSuperado" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = 666.078
+margin_top = 48.7353
+margin_right = 1301.08
+margin_bottom = 135.735
+custom_fonts/font = SubResource( 5 )
+text = "Nivel Superado"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tiempo" type="Label" parent="."]
+margin_left = 781.549
+margin_top = 457.688
+margin_right = 960.549
+margin_bottom = 507.688
+custom_fonts/font = SubResource( 6 )
+text = "Tiempo:"
 __meta__ = {
 "_edit_use_anchors_": false
 }

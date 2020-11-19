@@ -295,6 +295,6 @@ position = Vector2( -2795.53, -66.605 )
 position = Vector2( -1287.2, -41.8781 )
 
 [node name="Death" parent="." instance=ExtResource( 13 )]
-position = Vector2( -2098.64, 297.471 )
+position = Vector2( -3057.26, 445.469 )
 [connection signal="metaFinalizada" from="metaFinal" to="." method="_on_metaFinalizada"]
 [connection signal="body_entered" from="Death" to="." method="_on_Death_body_entered"]
