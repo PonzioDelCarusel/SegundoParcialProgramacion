@@ -20,11 +20,11 @@ func _ready():
 var reload_target_scene = ""
 
 func _on_button_pressed():
-	if Globals.current_level == 1:
+	if Globals.current_level == 0:
 		reload_target_scene = "res://scenes/levels/nivel1.tscn"
-	if Globals.current_level == 2:
+	if Globals.current_level == 1:
 		reload_target_scene = "res://scenes/levels/nivel2.tscn"
-	if Globals.current_level == 3:
+	if Globals.current_level == 2:
 		reload_target_scene = "res://scenes/levels/nivel3.tscn"
 	var retryLevel = get_tree().change_scene(reload_target_scene)
 	if retryLevel != OK:
