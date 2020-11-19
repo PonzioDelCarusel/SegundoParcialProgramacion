@@ -9,7 +9,8 @@ func _on_CheckPoint_body_entered(body):
 		print("player entered")
 		Globals.bandera = self
 		
-	
+		
+
 	
 	
 	pass # Replace with function body.
