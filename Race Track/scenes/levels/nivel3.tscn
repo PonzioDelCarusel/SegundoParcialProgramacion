@@ -14,6 +14,7 @@
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 9 )
+car = ExtResource( 2 )
 
 [node name="freeshape" type="StaticBody2D" parent="."]
 position = Vector2( 379.438, 434.182 )
@@ -68,9 +69,6 @@ position = Vector2( -667.504, -1699.9 )
 texture = ExtResource( 8 )
 texture_scale = Vector2( 4, 4 )
 polygon = PoolVector2Array( -602.211, -74.3271, -610.211, 263.673, -208.211, 299.673, 290.518, 308.721, 550.733, 308.721, 549.824, 238.491, 366.431, 228.897, 316.484, 224.14, 261.781, 207.492, 177.347, 187.275, 72.6965, 132.571, -48.6025, 37.4349, -124.834, -34.049, -175.834, -97.049, -237.834, -185.049, -259.834, -236.604, -264.834, -302.604, -269.834, -380.604, -267.834, -422.604, -249.834, -462.604, -222.834, -507.604, -194.834, -531.604, -172.077, -547.862, -122.074, -569.292, -121.28, -591.912, -105.831, -653.824, -164.63, -662.733, -349.703, -658.858, -504.385, -548.674, -538.211, -454.327, -574.211, -336.327, -608.211, -278.327, -604.211, -180.327 )
-
-[node name="car" parent="." instance=ExtResource( 2 )]
-position = Vector2( 7236.66, 2220.96 )
 
 [node name="bounce" parent="." instance=ExtResource( 3 )]
 position = Vector2( -7042.94, 1289.44 )
@@ -361,4 +359,9 @@ script = null
 
 [node name="goal2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 7649.74, 2360.74 )
+
+[node name="PlayerSpawn" type="Position2D" parent="." groups=[
+"SpawnPoint",
+]]
+position = Vector2( 7298.42, 2077.09 )
 [connection signal="metaFinalizada" from="goal2" to="." method="_on_metaFinalizada"]
