@@ -314,3 +314,4 @@ position = Vector2( 1178.47, 1590.39 )
 "SpawnPoint",
 ]]
 position = Vector2( 666.416, 1465.61 )
+[connection signal="metaFinalizada" from="goal2" to="." method="_on_metaFinalizada"]
