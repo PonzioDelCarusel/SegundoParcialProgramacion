@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://scenes/platforms/zerograv.tscn" type="PackedScene" id=7]
 [ext_resource path="res://images/seamless.png" type="Texture" id=8]
 [ext_resource path="res://scenes/levels/levels.gd" type="Script" id=9]
+[ext_resource path="res://scenes/levels/CheckPoint.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/platforms/Death.tscn" type="PackedScene" id=11]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -363,5 +365,22 @@ position = Vector2( 7649.74, 2360.74 )
 [node name="PlayerSpawn" type="Position2D" parent="." groups=[
 "SpawnPoint",
 ]]
-position = Vector2( 7298.42, 2077.09 )
+position = Vector2( -3666.52, 58.8943 )
+
+[node name="CheckPoint" parent="." instance=ExtResource( 10 )]
+position = Vector2( -3590.76, -50.1436 )
+
+[node name="CheckPoint" parent="CheckPoint" instance=ExtResource( 10 )]
+position = Vector2( -35.0249, -2448.39 )
+
+[node name="CheckPoint2" parent="CheckPoint" instance=ExtResource( 10 )]
+position = Vector2( 8213.66, 920.065 )
+
+[node name="Death" parent="CheckPoint/CheckPoint2" instance=ExtResource( 11 )]
+position = Vector2( -4939.47, -417.686 )
+scale = Vector2( 8.25517, 1 )
+
+[node name="Death2" parent="CheckPoint/CheckPoint2" instance=ExtResource( 11 )]
+position = Vector2( -1070.18, 1754.55 )
+scale = Vector2( 16.2353, -1.51496 )
 [connection signal="metaFinalizada" from="goal2" to="." method="_on_metaFinalizada"]

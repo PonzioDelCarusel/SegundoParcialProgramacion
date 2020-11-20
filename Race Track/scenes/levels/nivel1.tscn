@@ -114,10 +114,10 @@ polygon = PoolVector2Array( -1102.27, -807.007, -588.015, -277.532, -160.506, 24
 position = Vector2( 336.943, 463.873 )
 
 [node name="floor" parent="." instance=ExtResource( 4 )]
-position = Vector2( -759.283, 911.125 )
+position = Vector2( -5819.28, 2123.15 )
 
 [node name="floor2" parent="." instance=ExtResource( 4 )]
-position = Vector2( -1485.82, 985.124 )
+position = Vector2( -6545.82, 2197.15 )
 
 [node name="floor3" parent="." instance=ExtResource( 4 )]
 position = Vector2( -2744.62, 229.64 )
@@ -236,37 +236,37 @@ position = Vector2( -759.283, 4839.36 )
 position = Vector2( -1218.9, 4840.78 )
 
 [node name="seesaw2" parent="." instance=ExtResource( 5 )]
-position = Vector2( -2318.11, 955.15 )
+position = Vector2( -5089.67, 1777.29 )
 
 [node name="seesaw3" parent="." instance=ExtResource( 5 )]
-position = Vector2( -2778.45, 955.15 )
+position = Vector2( -5550.01, 1777.29 )
 
 [node name="zerograv" parent="." instance=ExtResource( 7 )]
-position = Vector2( -977.916, 911.665 )
+position = Vector2( -6037.91, 2123.69 )
 linear_damp = 1.0
 
 [node name="zerograv2" parent="." instance=ExtResource( 7 )]
-position = Vector2( -1124.23, 943.619 )
+position = Vector2( -6184.23, 2155.65 )
 linear_damp = 1.0
 
 [node name="zerograv3" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1049.98, -693.747 )
+position = Vector2( -5558.31, 1022.67 )
 linear_damp = 1.0
 
 [node name="magnet" parent="." instance=ExtResource( 1 )]
-position = Vector2( -3319.23, 692.723 )
+position = Vector2( -6090.79, 1514.87 )
 
 [node name="magnet2" parent="." instance=ExtResource( 1 )]
-position = Vector2( -3172.7, 692.624 )
+position = Vector2( -5944.26, 1514.77 )
 
 [node name="magnet3" parent="." instance=ExtResource( 1 )]
-position = Vector2( -3033.52, 695.987 )
+position = Vector2( -5805.07, 1518.13 )
 
 [node name="goal" parent="." instance=ExtResource( 6 )]
 position = Vector2( -3712.14, 229.64 )
 
 [node name="metaFinal" parent="." instance=ExtResource( 6 )]
-position = Vector2( -1590.47, 4377.22 )
+position = Vector2( -1590.47, 4394.45 )
 
 [node name="PlayerSpawn" type="Position2D" parent="." groups=[
 "SpawnPoint",
@@ -286,15 +286,25 @@ __meta__ = {
 }
 
 [node name="Alpha" parent="." instance=ExtResource( 12 )]
-position = Vector2( -3147.15, -59.5727 )
+position = Vector2( -3568.42, -49.2373 )
 
 [node name="Beta" parent="." instance=ExtResource( 12 )]
-position = Vector2( -2795.53, -66.605 )
+position = Vector2( 3553.12, -505.337 )
 
 [node name="Gama" parent="." instance=ExtResource( 12 )]
-position = Vector2( -1287.2, -41.8781 )
+position = Vector2( 1788.72, 4579.16 )
 
 [node name="Death" parent="." instance=ExtResource( 13 )]
-position = Vector2( -3057.26, 445.469 )
+position = Vector2( -2128.83, 338.84 )
+
+[node name="Death2" parent="." instance=ExtResource( 13 )]
+position = Vector2( 606.392, 5298.81 )
+scale = Vector2( 3.70257, 1.37177 )
+
+[node name="Death3" parent="." instance=ExtResource( 13 )]
+position = Vector2( 606.392, 5298.81 )
+scale = Vector2( 3.70257, 1.37177 )
 [connection signal="metaFinalizada" from="metaFinal" to="." method="_on_metaFinalizada"]
 [connection signal="body_entered" from="Death" to="." method="_on_Death_body_entered"]
+[connection signal="body_entered" from="Death2" to="." method="_on_Death_body_entered"]
+[connection signal="body_entered" from="Death3" to="." method="_on_Death_body_entered"]
