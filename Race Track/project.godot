@@ -17,7 +17,8 @@ _global_script_class_icons={
 
 config/name="#3 - Race Track"
 run/main_scene="res://scenes/screens/intro.tscn"
-config/icon="res://icon.png"
+boot_splash/image="res://images/Splash.png"
+config/icon="res://images/GameLogo.png"
 
 [autoload]
 
