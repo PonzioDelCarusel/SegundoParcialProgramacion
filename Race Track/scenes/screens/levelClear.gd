@@ -5,3 +5,4 @@ func _ready():
 
 func Set_UltimoTiempo(value):
 	$Label.set_text( Globals.get_StrTiempo(value))
+

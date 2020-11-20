@@ -20,6 +20,8 @@ func _ready():
 var reload_target_scene = ""
 
 func _on_button_pressed():
+	print('Current_Level: ', Globals.current_level)
+	
 	if Globals.current_level == 0:
 		reload_target_scene = "res://scenes/levels/nivel1.tscn"
 	if Globals.current_level == 1:
