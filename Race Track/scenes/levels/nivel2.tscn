@@ -321,13 +321,16 @@ position = Vector2( 1178.47, 1590.39 )
 position = Vector2( -3682.82, 14.978 )
 
 [node name="CheckPoint" parent="." instance=ExtResource( 10 )]
-position = Vector2( -3218.75, -39.598 )
+position = Vector2( -3603.42, 101.823 )
+scale = Vector2( 0.44, 0.4 )
 
 [node name="CheckPoint2" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1341.18, -582.043 )
+position = Vector2( 1435.4, -440.036 )
+scale = Vector2( 0.44, 0.400001 )
 
 [node name="CheckPoint3" parent="." instance=ExtResource( 10 )]
-position = Vector2( 2671.86, 1884.39 )
+position = Vector2( 2566.53, 2090.98 )
+scale = Vector2( 0.400002, 0.440001 )
 
 [node name="Death" parent="." instance=ExtResource( 11 )]
 position = Vector2( -2592.28, 348.059 )

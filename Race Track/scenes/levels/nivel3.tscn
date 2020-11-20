@@ -368,21 +368,24 @@ position = Vector2( 7649.74, 2360.74 )
 position = Vector2( -3666.52, 58.8943 )
 
 [node name="CheckPoint" parent="." instance=ExtResource( 10 )]
-position = Vector2( -3590.76, -50.1436 )
+position = Vector2( -3630.38, 94.5811 )
+scale = Vector2( 0.52, 0.439999 )
 
-[node name="CheckPoint" parent="CheckPoint" instance=ExtResource( 10 )]
-position = Vector2( -35.0249, -2448.39 )
-
-[node name="CheckPoint2" parent="CheckPoint" instance=ExtResource( 10 )]
-position = Vector2( 8213.66, 920.065 )
-
-[node name="Death" parent="CheckPoint/CheckPoint2" instance=ExtResource( 11 )]
-position = Vector2( -4939.47, -417.686 )
+[node name="Death" parent="." instance=ExtResource( 11 )]
+position = Vector2( -316.57, 452.235 )
 scale = Vector2( 8.25517, 1 )
 
-[node name="Death2" parent="CheckPoint/CheckPoint2" instance=ExtResource( 11 )]
-position = Vector2( -1070.18, 1754.55 )
+[node name="Death2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 3552.72, 2624.47 )
 scale = Vector2( 16.2353, -1.51496 )
+
+[node name="CheckPoint2" parent="." instance=ExtResource( 10 )]
+position = Vector2( -3686.19, -2358.84 )
+scale = Vector2( 0.615769, 0.450312 )
+
+[node name="CheckPoint3" parent="." instance=ExtResource( 10 )]
+position = Vector2( 4634.91, 1004.16 )
+scale = Vector2( 0.582161, 0.479999 )
 [connection signal="metaFinalizada" from="goal2" to="." method="_on_metaFinalizada"]
-[connection signal="body_entered" from="CheckPoint/CheckPoint2/Death" to="." method="_on_Death_body_entered"]
-[connection signal="body_entered" from="CheckPoint/CheckPoint2/Death2" to="." method="_on_Death_body_entered"]
+[connection signal="body_entered" from="Death" to="." method="_on_Death_body_entered"]
+[connection signal="body_entered" from="Death2" to="." method="_on_Death_body_entered"]
