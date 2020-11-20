@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -13,8 +13,14 @@
 [ext_resource path="res://scenes/platforms/Death.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/platforms/Death.gd" type="Script" id=12]
 [ext_resource path="res://TexturasPrueba/99.jpg" type="Texture" id=13]
+[ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://scenes/levels/ControlTiempo.gd" type="Script" id=15]
 
 [sub_resource type="PhysicsMaterial" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+font_data = ExtResource( 14 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 9 )
@@ -324,13 +330,14 @@ rotation = 7.03038
 position = Vector2( -3712.93, 229.64 )
 script = null
 
-[node name="goal2" parent="." instance=ExtResource( 6 )]
+[node name="metaFinal" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1178.47, 1590.39 )
+idNivel = 1
 
 [node name="PlayerSpawn" type="Position2D" parent="." groups=[
 "SpawnPoint",
 ]]
-position = Vector2( -3682.82, 14.978 )
+position = Vector2( 713.386, 1353.69 )
 
 [node name="CheckPoint" parent="." instance=ExtResource( 10 )]
 position = Vector2( -3603.42, 101.823 )
@@ -358,7 +365,20 @@ script = ExtResource( 12 )
 position = Vector2( 6587.83, 242.53 )
 scale = Vector2( 8.19032, -2.91308 )
 script = ExtResource( 12 )
-[connection signal="metaFinalizada" from="goal2" to="." method="_on_metaFinalizada"]
+
+[node name="ControlTiempo" type="CanvasLayer" parent="."]
+script = ExtResource( 15 )
+Level_Activo = 2
+
+[node name="labTiempo" type="Label" parent="ControlTiempo"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 2 )
+text = "Tiempo: 00:00:00"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="metaFinalizada" from="metaFinal" to="." method="_on_metaFinalizada"]
 [connection signal="body_entered" from="Death" to="." method="_on_Death_body_entered"]
 [connection signal="body_entered" from="Death2" to="." method="_on_Death_body_entered"]
 [connection signal="body_entered" from="Death3" to="." method="_on_Death_body_entered"]

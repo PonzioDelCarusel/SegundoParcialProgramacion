@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -12,8 +12,14 @@
 [ext_resource path="res://scenes/levels/CheckPoint.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/platforms/Death.tscn" type="PackedScene" id=11]
 [ext_resource path="res://TexturasPrueba/3354.jpg" type="Texture" id=12]
+[ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=13]
+[ext_resource path="res://scenes/levels/ControlTiempo.gd" type="Script" id=14]
 
 [sub_resource type="PhysicsMaterial" id=1]
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+font_data = ExtResource( 13 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 9 )
@@ -371,13 +377,14 @@ position = Vector2( 7375.54, 318.831 )
 position = Vector2( -3712.93, 229.64 )
 script = null
 
-[node name="goal2" parent="." instance=ExtResource( 6 )]
+[node name="metaFinal" parent="." instance=ExtResource( 6 )]
 position = Vector2( 7649.74, 2360.74 )
+idNivel = 2
 
 [node name="PlayerSpawn" type="Position2D" parent="." groups=[
 "SpawnPoint",
 ]]
-position = Vector2( -3666.52, 58.8943 )
+position = Vector2( 7312.22, 2036.68 )
 
 [node name="CheckPoint" parent="." instance=ExtResource( 10 )]
 position = Vector2( -3630.38, 94.5811 )
@@ -398,6 +405,19 @@ scale = Vector2( 0.615769, 0.450312 )
 [node name="CheckPoint3" parent="." instance=ExtResource( 10 )]
 position = Vector2( 4634.91, 1004.16 )
 scale = Vector2( 0.582161, 0.479999 )
-[connection signal="metaFinalizada" from="goal2" to="." method="_on_metaFinalizada"]
+
+[node name="ControlTiempo" type="CanvasLayer" parent="."]
+script = ExtResource( 14 )
+Level_Activo = 3
+
+[node name="labTiempo" type="Label" parent="ControlTiempo"]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 2 )
+text = "Tiempo: 00:00:00"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="metaFinalizada" from="metaFinal" to="." method="_on_metaFinalizada"]
 [connection signal="body_entered" from="Death" to="." method="_on_Death_body_entered"]
 [connection signal="body_entered" from="Death2" to="." method="_on_Death_body_entered"]
