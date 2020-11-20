@@ -330,7 +330,7 @@ position = Vector2( 1341.18, -582.043 )
 position = Vector2( 2671.86, 1884.39 )
 
 [node name="Death" parent="." instance=ExtResource( 11 )]
-position = Vector2( -2592.28, 319.55 )
+position = Vector2( -2592.28, 348.059 )
 scale = Vector2( 1.68, 1 )
 script = ExtResource( 12 )
 
@@ -344,3 +344,6 @@ position = Vector2( 6587.83, 242.53 )
 scale = Vector2( 8.19032, -2.91308 )
 script = ExtResource( 12 )
 [connection signal="metaFinalizada" from="goal2" to="." method="_on_metaFinalizada"]
+[connection signal="body_entered" from="Death" to="." method="_on_Death_body_entered"]
+[connection signal="body_entered" from="Death2" to="." method="_on_Death_body_entered"]
+[connection signal="body_entered" from="Death3" to="." method="_on_Death_body_entered"]
