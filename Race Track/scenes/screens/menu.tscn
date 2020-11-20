@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://images/intro/logo.png" type="Texture" id=1]
 [ext_resource path="res://images/game/background.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://scenes/screens/sceneChanger.gd" type="Script" id=4]
 [ext_resource path="res://scenes/screens/menu-salir.gd" type="Script" id=5]
 [ext_resource path="res://sounds/Carburando.wav" type="AudioStream" id=6]
+[ext_resource path="res://sounds/TOASTY.wav" type="AudioStream" id=7]
+[ext_resource path="res://images/toastyGuy.png" type="Texture" id=8]
 
 [sub_resource type="Animation" id=1]
 resource_name = "logoIdle"
@@ -86,6 +88,58 @@ tracks/2/keys = {
 "values": [ Vector2( 0.348193, 0.348193 ) ]
 }
 
+[sub_resource type="Animation" id=6]
+resource_name = "logoIdle"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("toastyGuy:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 1.5, 1.7, 2.5, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1666.51, -175.358 ), Vector2( 1666.51, 265.272 ), Vector2( 1666.51, 265.272 ), Vector2( 1666.51, -175.358 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("toastyGuy:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1.5, 1.7, 2.5, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -90.1507, -90.1507, -90.1507, -90.1507 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("toastyGuy:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1.5, 1.7, 2.5, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2.53453, 2.53453 ), Vector2( 2.53453, 2.53453 ), Vector2( 2.53453, 2.53453 ), Vector2( 2.53453, 2.53453 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Toasty:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
 [sub_resource type="DynamicFont" id=3]
 size = 40
 font_data = ExtResource( 3 )
@@ -105,6 +159,12 @@ position = Vector2( 958, 558 )
 scale = Vector2( 1.02076, 1.02076 )
 texture = ExtResource( 2 )
 
+[node name="toastyGuy" type="Sprite" parent="."]
+position = Vector2( 1666.51, -175.358 )
+rotation = -1.57343
+scale = Vector2( 2.53453, 2.53453 )
+texture = ExtResource( 8 )
+
 [node name="logo" type="Sprite" parent="."]
 position = Vector2( -114.761, 992.633 )
 scale = Vector2( 0.348193, 0.348193 )
@@ -116,6 +176,10 @@ anims/logoIdle = SubResource( 1 )
 anims/logoReset = SubResource( 2 )
 next/logoIdle = "logoReset"
 next/logoReset = "logoIdle"
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+autoplay = "logoIdle"
+anims/logoIdle = SubResource( 6 )
 
 [node name="salir" type="Button" parent="."]
 anchor_left = 0.5
@@ -168,4 +232,8 @@ position = Vector2( 1001.37, 582.648 )
 stream = ExtResource( 6 )
 volume_db = -10.0
 autoplay = true
+
+[node name="Toasty" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 1001.37, 582.648 )
+stream = ExtResource( 7 )
 [connection signal="pressed" from="salir" to="salir" method="_on_salir_pressed"]
