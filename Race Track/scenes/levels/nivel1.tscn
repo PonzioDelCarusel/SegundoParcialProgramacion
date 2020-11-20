@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -7,12 +7,13 @@
 [ext_resource path="res://scenes/platforms/seesaw.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/platforms/goal.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/platforms/zerograv.tscn" type="PackedScene" id=7]
-[ext_resource path="res://images/seamless.png" type="Texture" id=8]
+[ext_resource path="res://TexturasPrueba/407.jpg" type="Texture" id=8]
 [ext_resource path="res://scenes/levels/levels.gd" type="Script" id=9]
 [ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=10]
 [ext_resource path="res://scenes/levels/ControlTiempo.gd" type="Script" id=11]
 [ext_resource path="res://scenes/levels/CheckPoint.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/platforms/Death.tscn" type="PackedScene" id=13]
+[ext_resource path="res://TexturasPrueba/20483.jpg" type="Texture" id=14]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -27,19 +28,31 @@ __meta__ = {
 }
 car = ExtResource( 2 )
 
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -4838.0
+margin_top = -2742.0
+margin_right = 7177.0
+margin_bottom = 5764.0
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="freeshape" type="StaticBody2D" parent="."]
 position = Vector2( 379.438, 434.182 )
 physics_material_override = SubResource( 1 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="freeshape"]
 position = Vector2( -1703.83, -100.394 )
-polygon = PoolVector2Array( -241.661, -106.497, -246.15, 108.454, 385.796, 117.434, 2302.29, 139.545, 2091.87, -85.5573, 1915.07, -85.5573, 1758.8, -90.5028, 1549.5, -228.451, 1446.71, -447.265, 1325.93, -748.152, 1236.93, -1004.54, 1226.88, -1246.8, 1210.93, -1306.74, 1202.45, -1307.27, 1193.08, -1307.53, 1164.31, -1306.74, 1154.78, -1304.1, 1159.08, -1232.9, 1138.29, -1139.64, 1106.29, -1027.64, 1052.29, -883.645, 977.232, -686.035, 911.287, -581.282, 816.368, -449.103, 670.096, -293.317, 544.878, -182.897, 361.798, -108.647, 236.224, -106.805 )
+polygon = PoolVector2Array( -241.661, -106.497, -246.15, 108.454, 385.796, 117.434, 2302.29, 139.545, 2091.87, -85.5573, 1915.07, -85.5573, 1758.8, -90.5028, 1549.5, -228.451, 1446.71, -447.265, 1325.93, -748.152, 1236.93, -1004.54, 1226.88, -1246.8, 1210.86, -1300.26, 1202.73, -1300.62, 1192.83, -1300.62, 1173.73, -1299.91, 1164.54, -1298.85, 1159.08, -1232.9, 1138.29, -1139.64, 1106.29, -1027.64, 1052.29, -883.645, 977.232, -686.035, 911.287, -581.282, 816.368, -449.103, 670.096, -293.317, 544.878, -182.897, 361.798, -108.647, 236.224, -106.805 )
 
 [node name="CollisionPolygon2D2" type="Polygon2D" parent="freeshape"]
 position = Vector2( -1703.83, -100.394 )
-texture = ExtResource( 8 )
+texture = ExtResource( 14 )
 texture_scale = Vector2( 4, 4 )
-polygon = PoolVector2Array( -242.561, -106.048, -246.15, 108.454, 385.796, 117.434, 2302.29, 139.545, 2080.39, -87.5659, 1884.63, -81.3043, 1752.39, -87.5659, 1536.39, -235.566, 1317.39, -774.453, 1235.36, -1007.8, 1229.71, -1251.04, 1224.64, -1259.04, 1220.14, -1275.54, 1211.14, -1306.54, 1194.57, -1308.06, 1162.14, -1307.04, 1154.89, -1304.29, 1159.62, -1230.03, 1141.95, -1141.33, 1091.87, -989.076, 1024.52, -811.908, 970.398, -682.609, 921.01, -601.792, 766.11, -388.524, 541.661, -182.162, 359.315, -109.06 )
+texture_rotation_degrees = 91.4
+polygon = PoolVector2Array( -242.561, -106.048, -246.15, 108.454, 385.796, 117.434, 2302.29, 139.545, 2080.39, -87.5659, 1884.63, -81.3043, 1752.39, -87.5659, 1536.39, -235.566, 1317.39, -774.453, 1235.36, -1007.8, 1227.47, -1249, 1224.64, -1259.04, 1220.14, -1275.54, 1211.21, -1300.97, 1195.65, -1300.97, 1173.03, -1300.26, 1163.83, -1299.91, 1159.62, -1230.03, 1141.95, -1141.33, 1091.87, -989.076, 1024.52, -811.908, 970.398, -682.609, 921.01, -601.792, 766.11, -388.524, 541.661, -182.162, 359.315, -109.06 )
 
 [node name="CollisionPolygon2D13" type="CollisionPolygon2D" parent="freeshape"]
 position = Vector2( 3978.75, -1484.57 )
@@ -48,8 +61,9 @@ polygon = PoolVector2Array( 1236.93, -1004.54, 1226.88, -1246.8, 1193.08, -1307.
 
 [node name="CollisionPolygon2D14" type="Polygon2D" parent="freeshape"]
 position = Vector2( 849.83, -1129.12 )
-texture = ExtResource( 8 )
+texture = ExtResource( 14 )
 texture_scale = Vector2( 4, 4 )
+texture_rotation_degrees = 51.7
 polygon = PoolVector2Array( 1552.99, 100.402, 1487.47, 259.152, 1487.47, 327.188, 1517.71, 344.827, 1535.35, 307.029, 1558.03, 264.192, 1653.78, 163.398, 1779.78, 77.7237, 1900.73, 42.4459, 2019.16, 47.4856, 2049.4, -209.538, 1847.81, -108.745, 1797.41, -78.5065, 1585.75, 27.3268, 1560.55, 60.0848 )
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="freeshape"]
@@ -58,8 +72,9 @@ polygon = PoolVector2Array( -241.661, -106.497, -246.15, 108.454, 385.796, 117.4
 
 [node name="CollisionPolygon2D4" type="Polygon2D" parent="freeshape"]
 position = Vector2( 1733.07, -74.9673 )
-texture = ExtResource( 8 )
-texture_scale = Vector2( 4, 4 )
+texture = ExtResource( 14 )
+texture_scale = Vector2( 3, 4 )
+texture_rotation_degrees = 360.0
 polygon = PoolVector2Array( -242.561, -106.048, -246.15, 108.454, 385.796, 117.434, 2302.29, 139.545, 2080.39, -87.5659, 1884.63, -81.3043, 1752.39, -87.5659, 1543.55, -229.865, 1109.37, -124.151, 818.653, -611.19, 701.737, -339.032, 630.304, -234.264, 541.661, -182.162, 359.315, -109.06 )
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="freeshape"]
@@ -70,8 +85,9 @@ polygon = PoolVector2Array( -553.136, -524.974, -787.308, -748.814, -988.597, -1
 [node name="CollisionPolygon2D6" type="Polygon2D" parent="freeshape"]
 position = Vector2( 5158.74, -321.61 )
 rotation = -1.80563
-texture = ExtResource( 8 )
+texture = ExtResource( 14 )
 texture_scale = Vector2( 4, 4 )
+texture_rotation_degrees = -103.6
 polygon = PoolVector2Array( -972.331, -1016.18, -874.399, 107.744, -211.736, 261.395, 421.121, 266.926, 1187.81, -456.809, 887.642, -615.972, 826.94, -408.148, 782.309, -307.652, 725.341, -178.541, 677.834, -106.184, 646.757, -73.8159, 586.866, -41.48, 449.94, 28.5586, 273.514, 46.3218, 60.6929, -3.0542, -6.93604, -22.1992, -106.699, -75.4141, -242.216, -140.961, -273.642, -154.484, -763.066, -588.023, -965.643, -1019.66 )
 
 [node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="freeshape"]
@@ -82,9 +98,10 @@ polygon = PoolVector2Array( -478.098, -657.103, -722.486, -935.163, -888.152, -1
 [node name="CollisionPolygon2D10" type="Polygon2D" parent="freeshape"]
 position = Vector2( 6141.92, 1797.32 )
 rotation = -1.80563
-texture = ExtResource( 8 )
+texture = ExtResource( 14 )
 texture_scale = Vector2( 4, 4 )
-polygon = PoolVector2Array( -1092.02, -2031.04, -1126.58, 135.065, -874.399, 107.744, -211.736, 261.395, 421.121, 266.926, 1395.66, -367.26, 1314.26, -1484.14, 847.739, -479.697, 826.94, -408.148, 782.309, -307.652, 725.341, -178.541, 677.834, -106.184, 646.757, -73.8159, 586.866, -41.48, 449.94, 28.5586, 273.514, 46.3218, 70.7, -33.52, -0.067627, -59.6948, -249.167, -254.864, -687.435, -753.369, -880.977, -1639.75, -778.148, -2142.4, -933.88, -2092.51 )
+texture_rotation_degrees = 196.4
+polygon = PoolVector2Array( -1092.02, -2031.04, -1126.58, 135.065, -874.399, 107.744, -211.736, 261.395, 421.121, 266.926, 1395.66, -367.26, 1448.72, -350.754, 1384.28, -1241.57, 1322.18, -1486.72, 1314.26, -1484.14, 847.739, -479.697, 826.94, -408.148, 782.309, -307.652, 725.341, -178.541, 677.834, -106.184, 646.757, -73.8159, 586.866, -41.48, 449.94, 28.5586, 273.514, 46.3218, 70.7, -33.52, -0.067627, -59.6948, -249.167, -254.864, -687.435, -753.369, -880.977, -1639.75, -778.148, -2142.4, -933.88, -2092.51 )
 
 [node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="freeshape"]
 position = Vector2( 3826.38, 572.711 )
@@ -94,8 +111,11 @@ polygon = PoolVector2Array( -445.047, -688.278, -814.044, -872.56, -1177.4, -956
 [node name="CollisionPolygon2D8" type="Polygon2D" parent="freeshape"]
 position = Vector2( 3963.53, 491.419 )
 rotation = -4.6932
-texture = ExtResource( 8 )
-texture_scale = Vector2( 4, 4 )
+texture = ExtResource( 14 )
+texture_offset = Vector2( 6, 5 )
+texture_scale = Vector2( 3, 4 )
+texture_rotation_degrees = 165.0
+invert_border = 16384.0
 polygon = PoolVector2Array( -1102.27, -807.007, -588.015, -277.532, -160.506, 244.418, 453.063, 257.04, 1353.53, -362.834, 1220.3, -1899.87, 1210.31, -1913.17, 1189.06, -1927, 1163.38, -1937.74, 1131.82, -1942.38, 1092.83, -1943.88, 1065.06, -1946.35, 1064.02, -1936.83, 1043.68, -1353.2, 936.093, -641.605, 813.663, -312.84, 778.465, -218.559, 742.902, -154.456, 626.727, -79.1592, 571.81, -62.0659, 534.125, -75.5996, 113.565, -167.327, 1.38672, -293.884, -106.748, -412.785, -249.187, -480.619, -747.821, -723.079 )
 
 [node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="freeshape"]
@@ -106,8 +126,9 @@ polygon = PoolVector2Array( -155.081, -422.483, -814.044, -872.56, -402.05, -456
 [node name="CollisionPolygon2D12" type="Polygon2D" parent="freeshape"]
 position = Vector2( -4523.81, 3755.49 )
 rotation = -4.6932
-texture = ExtResource( 8 )
-texture_scale = Vector2( 4, 4 )
+texture = ExtResource( 14 )
+texture_offset = Vector2( 32, 654 )
+texture_scale = Vector2( 2, 1 )
 polygon = PoolVector2Array( -1102.27, -807.007, -588.015, -277.532, -160.506, 244.418, 453.063, 257.04, 1353.53, -362.834, 1064.02, -1936.83, 1043.68, -1353.2, 936.093, -641.605, 813.663, -312.84, 778.465, -218.559, 742.902, -154.456, 626.727, -79.1592, 571.81, -62.0659, 524.894, -48.1655, 286.177, -43.5835, 135.918, -72.7781, -45.7163, -251.069, -269.422, -392.909, -747.821, -723.079 )
 
 [node name="bounce" parent="." instance=ExtResource( 3 )]
@@ -294,7 +315,7 @@ position = Vector2( 919.812, 143.53 )
 scale = Vector2( 0.498288, 0.44365 )
 
 [node name="Gama" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1681.23, 4722.34 )
+position = Vector2( 1756.74, 4722.34 )
 scale = Vector2( 0.599998, 0.44 )
 
 [node name="Death" parent="." instance=ExtResource( 13 )]
