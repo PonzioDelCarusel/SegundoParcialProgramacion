@@ -7,7 +7,7 @@
 [ext_resource path="res://scenes/platforms/seesaw.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/platforms/goal.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/platforms/zerograv.tscn" type="PackedScene" id=7]
-[ext_resource path="res://images/seamless.png" type="Texture" id=8]
+[ext_resource path="res://TexturasPrueba/41554.jpg" type="Texture" id=8]
 [ext_resource path="res://scenes/levels/levels.gd" type="Script" id=9]
 [ext_resource path="res://scenes/levels/CheckPoint.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/platforms/Death.tscn" type="PackedScene" id=11]
@@ -48,7 +48,9 @@ polygon = PoolVector2Array( -248.903, -111.882, -246.15, 108.454, -53.6683, 99.7
 [node name="CollisionPolygon2D2" type="Polygon2D" parent="freeshape"]
 position = Vector2( -1158.11, -132.743 )
 texture = ExtResource( 8 )
-texture_scale = Vector2( 4, 4 )
+texture_offset = Vector2( 20, 50 )
+texture_scale = Vector2( 1, 2 )
+texture_rotation_degrees = -295.4
 polygon = PoolVector2Array( -240.51, -104.55, -243.18, 118.368, -49.0439, 106.695, 1055.32, 129.467, 1063.92, -99.8743, -199.13, -104.55 )
 
 [node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="freeshape"]
@@ -60,7 +62,7 @@ polygon = PoolVector2Array( -248.903, -111.882, -246.15, 108.454, -53.6683, 99.7
 position = Vector2( 2749.96, 373.276 )
 rotation = 1.57079
 texture = ExtResource( 8 )
-texture_scale = Vector2( 4, 4 )
+texture_scale = Vector2( 1, 0.9 )
 polygon = PoolVector2Array( -240.51, -104.55, -243.18, 118.368, -49.0439, 106.695, 1041.9, 82.4294, 1184.6, 196.594, 1317.79, 379.732, 1643.62, 1237.05, 1799.62, 1781.05, 2011.62, 2713.05, 2127.62, 3233.05, 2143.62, 3425.05, 2139.62, 3837.05, 2131.62, 4222.26, 2107.62, 4506.26, 2070.39, 4670.08, 2013.24, 4809.77, 1957.68, 4916.13, 1870.38, 4995.5, 1756.08, 5063.76, 1683.96, 5111.33, 1542.44, 5138.68, 1482.97, 5147.3, 1424.04, 5148.42, 1387.56, 5137.76, 1367.36, 5128.22, 1354.45, 5116.43, 1316.92, 5073.93, 1295.35, 5035.39, 1287.93, 5021.95, 1278.73, 5007.81, 1273.43, 4997.21, 1263.77, 4987.48, 1266.44, 5026.68, 1248.94, 5104.65, 1301.7, 5235.97, 1619.74, 5440.74, 2279.93, 5339.97, 2843.62, 3825.05, 3035.63, -58.9463, -199.13, -104.55 )
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="freeshape"]
@@ -70,7 +72,7 @@ polygon = PoolVector2Array( -248.903, -111.882, -246.15, 108.454, -53.6683, 99.7
 [node name="CollisionPolygon2D4" type="Polygon2D" parent="freeshape"]
 position = Vector2( 198.251, -129.892 )
 texture = ExtResource( 8 )
-texture_scale = Vector2( 4, 4 )
+texture_rotation_degrees = -134.7
 polygon = PoolVector2Array( -296.872, -105.215, -315.872, 124.785, -49.0439, 106.695, -39.0624, 62.2433, -2.29285, -114.533, 20.3108, -257.04, 5.36536, -238.923, -14.8512, -220.787, -32.8932, -203.79, -47.0583, -188.063, -68.2475, -169.787, -86.8718, -156.215, -114.872, -142.215, -143.872, -127.215, -180.872, -115.215, -213.872, -106.215 )
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="freeshape"]
@@ -80,7 +82,8 @@ polygon = PoolVector2Array( -248.903, -111.882, -246.15, 108.454, -53.6683, 99.7
 [node name="CollisionPolygon2D6" type="Polygon2D" parent="freeshape"]
 position = Vector2( 1945.77, -673.466 )
 texture = ExtResource( 8 )
-texture_scale = Vector2( 4, 4 )
+texture_offset = Vector2( 300, 200 )
+texture_scale = Vector2( 10, 3 )
 polygon = PoolVector2Array( -296.872, -105.215, -315.872, 124.785, -49.0439, 106.695, -39.0624, 62.2433, -2.29285, -114.533, -5.56409, -244.876, -20.9105, -220.91, -32.8932, -203.79, -47.0583, -188.063, -68.2475, -169.787, -86.8718, -156.215, -114.872, -142.215, -143.872, -127.215, -181.69, -115.426, -216.396, -110.086 )
 
 [node name="bounce" parent="." instance=ExtResource( 3 )]
@@ -149,7 +152,7 @@ rotation = 1.57079
 scale = Vector2( 2.97994, 0.434166 )
 
 [node name="floor27" parent="." instance=ExtResource( 4 )]
-position = Vector2( 259.049, 1181.47 )
+position = Vector2( 281.524, 1202.45 )
 rotation = 2.35619
 scale = Vector2( 1.09793, 0.434166 )
 
@@ -337,7 +340,7 @@ idNivel = 1
 [node name="PlayerSpawn" type="Position2D" parent="." groups=[
 "SpawnPoint",
 ]]
-position = Vector2( 713.386, 1353.69 )
+position = Vector2( -3684.09, 85.0503 )
 
 [node name="CheckPoint" parent="." instance=ExtResource( 10 )]
 position = Vector2( -3603.42, 101.823 )
