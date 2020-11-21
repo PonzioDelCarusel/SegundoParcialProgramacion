@@ -195,7 +195,7 @@ scale = Vector2( 1.91906, 1 )
 [node name="floor21" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1035.76, 5103.04 )
 rotation = 4.71238
-scale = Vector2( 1.91906, 1 )
+scale = Vector2( 1.91906, 1.2 )
 
 [node name="floor22" parent="." instance=ExtResource( 4 )]
 position = Vector2( -2303.07, 4394.52 )
@@ -256,7 +256,7 @@ scale = Vector2( 1.2, 1 )
 position = Vector2( -759.283, 4839.36 )
 
 [node name="seesaw8" parent="." instance=ExtResource( 5 )]
-position = Vector2( -1218.9, 4840.78 )
+position = Vector2( -1224.85, 4838.4 )
 
 [node name="seesaw2" parent="." instance=ExtResource( 5 )]
 position = Vector2( -5089.67, 1777.29 )
@@ -294,7 +294,7 @@ position = Vector2( -1590.47, 4394.45 )
 [node name="PlayerSpawn" type="Position2D" parent="." groups=[
 "SpawnPoint",
 ]]
-position = Vector2( -3659.45, -37.6068 )
+position = Vector2( -3663.56, 63.0308 )
 
 [node name="ControlTiempo" type="CanvasLayer" parent="."]
 script = ExtResource( 11 )
@@ -387,7 +387,11 @@ rotation = -0.168943
 texture = ExtResource( 15 )
 
 [node name="Turbo" parent="." instance=ExtResource( 16 )]
-position = Vector2( -3482.18, 22.6789 )
+position = Vector2( 609.099, 67.3721 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Turbo2" parent="." instance=ExtResource( 16 )]
+position = Vector2( 1326.95, 4648.64 )
 scale = Vector2( 0.3, 0.3 )
 [connection signal="metaFinalizada" from="metaFinal" to="." method="_on_metaFinalizada"]
 [connection signal="body_entered" from="Death" to="." method="_on_Death_body_entered"]

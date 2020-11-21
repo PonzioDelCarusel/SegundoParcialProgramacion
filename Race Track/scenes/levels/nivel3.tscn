@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=13]
 [ext_resource path="res://scenes/levels/ControlTiempo.gd" type="Script" id=14]
 [ext_resource path="res://TexturasPrueba/Spikes-PNG-Free-Download.png" type="Texture" id=15]
+[ext_resource path="res://scenes/levels/Turbo.tscn" type="PackedScene" id=16]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -320,6 +321,11 @@ position = Vector2( -653.945, -2588.44 )
 rotation = -0.461714
 scale = Vector2( 2.00169, 1 )
 
+[node name="floor42" parent="." instance=ExtResource( 4 )]
+position = Vector2( 53.5201, -2777.99 )
+rotation = 1.57743
+scale = Vector2( 2.69922, 0.983229 )
+
 [node name="floor21" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1966.79, -1893.4 )
 rotation = -1.57079
@@ -433,6 +439,18 @@ idNivel = 2
 "SpawnPoint",
 ]]
 position = Vector2( -3651.83, 35.0364 )
+
+[node name="Turbo" parent="PlayerSpawn" instance=ExtResource( 16 )]
+position = Vector2( 3713.59, -2291.74 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Turbo3" parent="PlayerSpawn" instance=ExtResource( 16 )]
+position = Vector2( 991.077, -1102.72 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Turbo2" parent="PlayerSpawn" instance=ExtResource( 16 )]
+position = Vector2( 3609.14, -1259.51 )
+scale = Vector2( 0.3, 0.3 )
 
 [node name="CheckPoint" parent="." instance=ExtResource( 10 )]
 position = Vector2( -3630.38, 94.5811 )

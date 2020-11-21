@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://scenes/levels/ControlTiempo.gd" type="Script" id=15]
 [ext_resource path="res://TexturasPrueba/Spikes-PNG-Free-Download.png" type="Texture" id=16]
+[ext_resource path="res://scenes/levels/Turbo.tscn" type="PackedScene" id=17]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -135,8 +136,9 @@ position = Vector2( 1651.92, -331.051 )
 scale = Vector2( 2.97994, 0.434166 )
 
 [node name="floor21" parent="." instance=ExtResource( 4 )]
-position = Vector2( -688.782, 2351.34 )
-scale = Vector2( 2.97994, 0.434166 )
+position = Vector2( -694.208, 2410.26 )
+rotation = -0.12166
+scale = Vector2( 3.0942, 0.794166 )
 
 [node name="floor23" parent="." instance=ExtResource( 4 )]
 position = Vector2( 87.3289, 2351.34 )
@@ -153,7 +155,7 @@ rotation = 1.57079
 scale = Vector2( 2.97994, 0.434166 )
 
 [node name="floor27" parent="." instance=ExtResource( 4 )]
-position = Vector2( 281.524, 1261.85 )
+position = Vector2( 254.585, 1210.22 )
 rotation = 2.35619
 scale = Vector2( 1.09793, 0.434166 )
 
@@ -191,6 +193,16 @@ scale = Vector2( 2.97994, 0.434166 )
 position = Vector2( 4544.64, -662.279 )
 rotation = 1.57079
 scale = Vector2( 2.97994, 0.434166 )
+
+[node name="floor29" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4394.63, -581.112 )
+rotation = 2.35619
+scale = Vector2( 1.29994, 0.434166 )
+
+[node name="floor30" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4238.4, -233.694 )
+rotation = 2.35619
+scale = Vector2( 1.29994, 0.434166 )
 
 [node name="floor14" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3828.56, -472.467 )
@@ -233,11 +245,11 @@ rotation = 1.57079
 scale = Vector2( 1.52, 1 )
 
 [node name="seesaw5" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4024.49, -492.552 )
+position = Vector2( 4892.8, -603.67 )
 scale = Vector2( 0.72, 1 )
 
 [node name="seesaw6" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4355.59, -491.758 )
+position = Vector2( 4893.72, -533.03 )
 scale = Vector2( 0.72, 1 )
 
 [node name="seesaw3" parent="." instance=ExtResource( 5 )]
@@ -322,13 +334,29 @@ rotation = 4.71238
 position = Vector2( 97.9267, 1717.05 )
 rotation = 4.71238
 
+[node name="magnet11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 551.418, 1892.84 )
+rotation = 7.85397
+
 [node name="magnet9" parent="." instance=ExtResource( 1 )]
 position = Vector2( 555.615, 1657.72 )
 rotation = 7.85397
 
+[node name="magnet12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 555.615, 1792.65 )
+rotation = 7.85397
+
 [node name="magnet10" parent="." instance=ExtResource( 1 )]
-position = Vector2( -599.727, 1114.69 )
-rotation = 7.03038
+position = Vector2( 7012.36, 777.872 )
+rotation = 6.28318
+
+[node name="magnet13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 399.264, 1184.28 )
+rotation = 6.28318
+
+[node name="magnet14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 538.449, 1184.28 )
+rotation = 6.28318
 
 [node name="goal" parent="." instance=ExtResource( 6 )]
 position = Vector2( -3712.93, 229.64 )
@@ -341,7 +369,15 @@ idNivel = 1
 [node name="PlayerSpawn" type="Position2D" parent="." groups=[
 "SpawnPoint",
 ]]
-position = Vector2( -3640.45, 53.2314 )
+position = Vector2( -3685.37, 50.8869 )
+
+[node name="Turbo" parent="PlayerSpawn" instance=ExtResource( 17 )]
+position = Vector2( 7445.45, -233.877 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Turbo2" parent="PlayerSpawn" instance=ExtResource( 17 )]
+position = Vector2( 6246.54, 1869.48 )
+scale = Vector2( 0.3, 0.3 )
 
 [node name="CheckPoint" parent="." instance=ExtResource( 10 )]
 position = Vector2( -3603.42, 101.823 )

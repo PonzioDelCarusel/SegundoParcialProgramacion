@@ -6,8 +6,8 @@
 [ext_resource path="res://scenes/car/sprite.gd" type="Script" id=4]
 [ext_resource path="res://scenes/car/car.gd" type="Script" id=5]
 
-[sub_resource type="CircleShape2D" id=1]
-radius = 12.4805
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 20.162, 18.4628 )
 
 [sub_resource type="PhysicsMaterial" id=2]
 
@@ -28,6 +28,7 @@ texture = ExtResource( 3 )
 script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2( -7.62939e-06, 8.97694 )
 shape = SubResource( 1 )
 
 [node name="spring_bottom" type="DampedSpringJoint2D" parent="player"]

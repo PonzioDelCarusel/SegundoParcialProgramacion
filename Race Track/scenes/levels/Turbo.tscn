@@ -45,7 +45,7 @@ tracks/2/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 102.36, 98.9329 )
+extents = Vector2( 102.36, 255.328 )
 
 [node name="Turbo" type="Area2D"]
 collision_layer = 2147483650
@@ -62,7 +62,7 @@ autoplay = "Anim"
 anims/Anim = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 612.275, 472.508 )
+position = Vector2( 612.275, 328.877 )
 scale = Vector2( 1, 0.93 )
 shape = SubResource( 2 )
 [connection signal="body_entered" from="." to="." method="_on_Turbo_body_entered"]
