@@ -129,6 +129,38 @@ position = Vector2( -713.223, -2219.09 )
 position = Vector2( -497.466, -2308.99 )
 rotation = -1.05859
 
+[node name="bounce17" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2661.14, -2755.27 )
+rotation = -1.57079
+
+[node name="bounce18" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2661.14, -2617.42 )
+rotation = -1.57079
+
+[node name="bounce19" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2661.14, -2479.58 )
+rotation = -1.57079
+
+[node name="bounce20" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2661.14, -2340.66 )
+rotation = -1.57079
+
+[node name="bounce21" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2661.14, -2202.81 )
+rotation = -1.57079
+
+[node name="bounce22" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2661.14, -2063.97 )
+rotation = -1.57079
+
+[node name="bounce23" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2661.14, -1920.14 )
+rotation = -1.57079
+
+[node name="bounce24" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2661.14, -1773.3 )
+rotation = -1.57079
+
 [node name="bounce10" parent="." instance=ExtResource( 3 )]
 position = Vector2( -5880.36, 81.5753 )
 rotation = 1.57079
@@ -155,26 +187,6 @@ rotation = -0.7207
 [node name="bounce16" parent="." instance=ExtResource( 3 )]
 position = Vector2( 3279.01, 719.743 )
 rotation = 1.57079
-
-[node name="bounce17" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1892.37, -2426.56 )
-rotation = 4.71238
-
-[node name="bounce18" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1892.37, -2288.66 )
-rotation = 4.71238
-
-[node name="bounce19" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1892.37, -2150.75 )
-rotation = 4.71238
-
-[node name="bounce20" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1892.37, -2011.16 )
-rotation = 4.71238
-
-[node name="bounce21" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1892.37, -1873.25 )
-rotation = 4.71238
 
 [node name="bounce7" parent="." instance=ExtResource( 3 )]
 position = Vector2( -1372.09, -1299 )
@@ -328,17 +340,17 @@ rotation = 1.57743
 scale = Vector2( 2.69922, 0.983229 )
 
 [node name="floor21" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1966.79, -1893.4 )
+position = Vector2( 2730.81, -3538.32 )
 rotation = -1.57079
-scale = Vector2( 2.00169, 1 )
+scale = Vector2( 6.68169, 1 )
 
 [node name="floor40" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1966.79, -2293.4 )
+position = Vector2( 2730.81, -2412.19 )
 rotation = -1.57079
 scale = Vector2( 2.00169, 1 )
 
 [node name="floor41" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1966.79, -2640.65 )
+position = Vector2( 2730.46, -1893.94 )
 rotation = -1.57079
 scale = Vector2( 2.00169, 1 )
 
