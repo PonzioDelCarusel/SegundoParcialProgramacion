@@ -376,6 +376,18 @@ position = Vector2( -3685.37, 50.8869 )
 position = Vector2( 7445.45, -233.877 )
 scale = Vector2( 0.3, 0.3 )
 
+[node name="Turbo3" parent="PlayerSpawn" instance=ExtResource( 17 )]
+position = Vector2( 6688.06, -999.647 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Turbo4" parent="PlayerSpawn" instance=ExtResource( 17 )]
+position = Vector2( 5228.33, -571.579 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Turbo5" parent="PlayerSpawn" instance=ExtResource( 17 )]
+position = Vector2( 2521.38, -31.9881 )
+scale = Vector2( 0.3, 0.3 )
+
 [node name="Turbo2" parent="PlayerSpawn" instance=ExtResource( 17 )]
 position = Vector2( 6246.54, 1869.48 )
 scale = Vector2( 0.3, 0.3 )

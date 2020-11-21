@@ -395,6 +395,14 @@ scale = Vector2( 0.3, 0.3 )
 position = Vector2( 1326.95, 4648.64 )
 scale = Vector2( 0.3, 0.3 )
 
+[node name="Turbo3" parent="." instance=ExtResource( 16 )]
+position = Vector2( 3335.25, -439.662 )
+scale = Vector2( 0.3, 0.3 )
+
+[node name="Turbo4" parent="." instance=ExtResource( 16 )]
+position = Vector2( -1605.84, 45.4421 )
+scale = Vector2( 0.3, 0.3 )
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 17 )
 volume_db = -30.0
