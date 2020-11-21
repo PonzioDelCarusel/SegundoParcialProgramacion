@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="#3 - Race Track"
+config/name="Cronica Games - Parcial 2"
 run/main_scene="res://scenes/screens/intro.tscn"
 boot_splash/image="res://images/Splash.png"
 config/icon="res://images/GameLogo.png"
