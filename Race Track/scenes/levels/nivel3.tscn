@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://TexturasPrueba/3354.jpg" type="Texture" id=12]
 [ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=13]
 [ext_resource path="res://scenes/levels/ControlTiempo.gd" type="Script" id=14]
+[ext_resource path="res://TexturasPrueba/Spikes-PNG-Free-Download.png" type="Texture" id=15]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -434,6 +435,246 @@ text = "Tiempo: 00:00:00"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Spikes-PNG-Free-Download" type="Sprite" parent="."]
+position = Vector2( -3436.82, 466.61 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download2" type="Sprite" parent="."]
+position = Vector2( -2633.73, 469.606 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download3" type="Sprite" parent="."]
+position = Vector2( -2633.73, 469.606 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download4" type="Sprite" parent="."]
+position = Vector2( -1851.61, 472.603 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download5" type="Sprite" parent="."]
+position = Vector2( -1093.47, 478.596 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download6" type="Sprite" parent="."]
+position = Vector2( -291.611, 460.953 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download7" type="Sprite" parent="."]
+position = Vector2( 511.482, 463.949 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download8" type="Sprite" parent="."]
+position = Vector2( 511.482, 463.949 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download9" type="Sprite" parent="."]
+position = Vector2( 1293.6, 466.946 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download10" type="Sprite" parent="."]
+position = Vector2( 2051.74, 472.939 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download11" type="Sprite" parent="."]
+position = Vector2( 483.379, 460.953 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download12" type="Sprite" parent="."]
+position = Vector2( 1286.47, 463.949 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download13" type="Sprite" parent="."]
+position = Vector2( 1286.47, 463.949 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download14" type="Sprite" parent="."]
+position = Vector2( 2068.59, 466.946 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download15" type="Sprite" parent="."]
+position = Vector2( 2826.73, 472.939 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download16" type="Sprite" parent="."]
+position = Vector2( 483.379, 2620.55 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download17" type="Sprite" parent="."]
+position = Vector2( 1286.47, 2623.55 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download18" type="Sprite" parent="."]
+position = Vector2( 1286.47, 2623.55 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download19" type="Sprite" parent="."]
+position = Vector2( 2068.59, 2626.55 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download20" type="Sprite" parent="."]
+position = Vector2( 2826.73, 2632.54 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download21" type="Sprite" parent="."]
+position = Vector2( 978.09, 2620.55 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download22" type="Sprite" parent="."]
+position = Vector2( 1781.18, 2623.55 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download23" type="Sprite" parent="."]
+position = Vector2( 1781.18, 2623.55 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download24" type="Sprite" parent="."]
+position = Vector2( 2563.3, 2626.55 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download25" type="Sprite" parent="."]
+position = Vector2( 3321.44, 2632.54 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download26" type="Sprite" parent="."]
+position = Vector2( 1234.96, 2611.04 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download27" type="Sprite" parent="."]
+position = Vector2( 2038.05, 2614.04 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download28" type="Sprite" parent="."]
+position = Vector2( 2038.05, 2614.04 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download29" type="Sprite" parent="."]
+position = Vector2( 2820.17, 2617.03 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download30" type="Sprite" parent="."]
+position = Vector2( 3578.31, 2623.03 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download31" type="Sprite" parent="."]
+position = Vector2( 3508.72, 2592.01 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download32" type="Sprite" parent="."]
+position = Vector2( 4311.81, 2595.01 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download33" type="Sprite" parent="."]
+position = Vector2( 4311.81, 2595.01 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download34" type="Sprite" parent="."]
+position = Vector2( 5093.93, 2598 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download35" type="Sprite" parent="."]
+position = Vector2( 5852.08, 2604 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download36" type="Sprite" parent="."]
+position = Vector2( 3508.72, 2592.01 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download37" type="Sprite" parent="."]
+position = Vector2( 4311.81, 2595.01 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download38" type="Sprite" parent="."]
+position = Vector2( 4311.81, 2595.01 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download39" type="Sprite" parent="."]
+position = Vector2( 5093.93, 2598 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download40" type="Sprite" parent="."]
+position = Vector2( 5852.08, 2604 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download41" type="Sprite" parent="."]
+position = Vector2( 5624.7, 2642.58 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download42" type="Sprite" parent="."]
+position = Vector2( 5624.7, 2642.58 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download43" type="Sprite" parent="."]
+position = Vector2( 6406.82, 2645.57 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download44" type="Sprite" parent="."]
+position = Vector2( 7164.96, 2651.57 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download45" type="Sprite" parent="."]
+position = Vector2( 6518.89, 2617.15 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download46" type="Sprite" parent="."]
+position = Vector2( 6518.89, 2617.15 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download47" type="Sprite" parent="."]
+position = Vector2( 7301, 2620.15 )
+rotation = -0.165537
+texture = ExtResource( 15 )
+
+[node name="Spikes-PNG-Free-Download48" type="Sprite" parent="."]
+position = Vector2( 8059.15, 2626.14 )
+rotation = -0.165537
+texture = ExtResource( 15 )
 [connection signal="metaFinalizada" from="metaFinal" to="." method="_on_metaFinalizada"]
 [connection signal="body_entered" from="Death" to="." method="_on_Death_body_entered"]
 [connection signal="body_entered" from="Death2" to="." method="_on_Death_body_entered"]

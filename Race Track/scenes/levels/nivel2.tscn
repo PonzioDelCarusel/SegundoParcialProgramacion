@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://TexturasPrueba/99.jpg" type="Texture" id=13]
 [ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://scenes/levels/ControlTiempo.gd" type="Script" id=15]
+[ext_resource path="res://TexturasPrueba/Spikes-PNG-Free-Download.png" type="Texture" id=16]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -381,6 +382,111 @@ text = "Tiempo: 00:00:00"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Spikes-PNG-Free-Download" type="Sprite" parent="."]
+position = Vector2( -2621.35, 451.775 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download2" type="Sprite" parent="."]
+position = Vector2( -2867.4, 451.775 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download3" type="Sprite" parent="."]
+position = Vector2( -2227.67, 427.964 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download10" type="Sprite" parent="."]
+position = Vector2( 3790.16, 308.099 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download11" type="Sprite" parent="."]
+position = Vector2( 3544.11, 308.099 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download12" type="Sprite" parent="."]
+position = Vector2( 4183.83, 284.288 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download13" type="Sprite" parent="."]
+position = Vector2( 5066.26, 302.76 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download14" type="Sprite" parent="."]
+position = Vector2( 4820.21, 302.76 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download15" type="Sprite" parent="."]
+position = Vector2( 5459.94, 278.949 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download16" type="Sprite" parent="."]
+position = Vector2( 6379.15, 326.544 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download17" type="Sprite" parent="."]
+position = Vector2( 6133.1, 326.544 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download18" type="Sprite" parent="."]
+position = Vector2( 6772.82, 302.733 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download19" type="Sprite" parent="."]
+position = Vector2( 7788.74, 326.544 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download20" type="Sprite" parent="."]
+position = Vector2( 7542.69, 326.544 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download21" type="Sprite" parent="."]
+position = Vector2( 8182.41, 302.733 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download4" type="Sprite" parent="."]
+position = Vector2( 1251.31, 430.813 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download8" type="Sprite" parent="."]
+position = Vector2( 1251.31, 430.813 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download5" type="Sprite" parent="."]
+position = Vector2( 1005.26, 430.813 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download9" type="Sprite" parent="."]
+position = Vector2( 1045.67, 242.239 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download6" type="Sprite" parent="."]
+position = Vector2( 1644.98, 407.002 )
+rotation = -0.149426
+texture = ExtResource( 16 )
+
+[node name="Spikes-PNG-Free-Download7" type="Sprite" parent="."]
+position = Vector2( 2131.31, 404.482 )
+rotation = -0.149426
+texture = ExtResource( 16 )
 [connection signal="metaFinalizada" from="metaFinal" to="." method="_on_metaFinalizada"]
 [connection signal="body_entered" from="Death" to="." method="_on_Death_body_entered"]
 [connection signal="body_entered" from="Death2" to="." method="_on_Death_body_entered"]
