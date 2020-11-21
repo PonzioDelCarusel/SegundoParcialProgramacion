@@ -111,6 +111,7 @@ texture = ExtResource( 6 )
 [node name="ChilindrinaAudio" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 998.934, 577.955 )
 stream = ExtResource( 7 )
+volume_db = -5.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Chilindrina"

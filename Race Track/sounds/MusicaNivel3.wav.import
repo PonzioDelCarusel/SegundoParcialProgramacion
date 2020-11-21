@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MusicaNivel3.wav-ee4279e97f48a55c6ab6b049ad3ef73d.sample"
+
+[deps]
+
+source_file="res://sounds/MusicaNivel3.wav"
+dest_files=[ "res://.import/MusicaNivel3.wav-ee4279e97f48a55c6ab6b049ad3ef73d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

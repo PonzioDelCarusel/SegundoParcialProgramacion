@@ -210,6 +210,7 @@ texture = ExtResource( 5 )
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 927.042, 546.066 )
 stream = ExtResource( 6 )
+volume_db = -35.0
 
 [node name="bugs" type="Sprite" parent="."]
 visible = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://scenes/platforms/magnet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/car/car.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://TexturasPrueba/20483.jpg" type="Texture" id=14]
 [ext_resource path="res://TexturasPrueba/Spikes-PNG-Free-Download.png" type="Texture" id=15]
 [ext_resource path="res://scenes/levels/Turbo.tscn" type="PackedScene" id=16]
+[ext_resource path="res://sounds/MusicaNivel1.wav" type="AudioStream" id=17]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -393,6 +394,11 @@ scale = Vector2( 0.3, 0.3 )
 [node name="Turbo2" parent="." instance=ExtResource( 16 )]
 position = Vector2( 1326.95, 4648.64 )
 scale = Vector2( 0.3, 0.3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+volume_db = -30.0
+autoplay = true
 [connection signal="metaFinalizada" from="metaFinal" to="." method="_on_metaFinalizada"]
 [connection signal="body_entered" from="Death" to="." method="_on_Death_body_entered"]
 [connection signal="body_entered" from="Death2" to="." method="_on_Death_body_entered"]

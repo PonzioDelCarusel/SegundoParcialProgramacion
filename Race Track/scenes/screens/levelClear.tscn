@@ -163,3 +163,4 @@ position = Vector2( 965.803, 573.542 )
 rotation = -0.687548
 scale = Vector2( 0.5304, 0.5304 )
 stream = ExtResource( 8 )
+volume_db = -25.0
