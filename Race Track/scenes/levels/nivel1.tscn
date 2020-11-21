@@ -292,7 +292,7 @@ position = Vector2( -1590.47, 4394.45 )
 [node name="PlayerSpawn" type="Position2D" parent="." groups=[
 "SpawnPoint",
 ]]
-position = Vector2( -2221.23, 4043.16 )
+position = Vector2( -3659.45, -37.6068 )
 
 [node name="ControlTiempo" type="CanvasLayer" parent="."]
 script = ExtResource( 11 )

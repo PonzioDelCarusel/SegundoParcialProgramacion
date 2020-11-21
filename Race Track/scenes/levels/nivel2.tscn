@@ -152,7 +152,7 @@ rotation = 1.57079
 scale = Vector2( 2.97994, 0.434166 )
 
 [node name="floor27" parent="." instance=ExtResource( 4 )]
-position = Vector2( 281.524, 1202.45 )
+position = Vector2( 281.524, 1261.85 )
 rotation = 2.35619
 scale = Vector2( 1.09793, 0.434166 )
 
@@ -340,7 +340,7 @@ idNivel = 1
 [node name="PlayerSpawn" type="Position2D" parent="." groups=[
 "SpawnPoint",
 ]]
-position = Vector2( 786.032, 1412.12 )
+position = Vector2( -3640.45, 53.2314 )
 
 [node name="CheckPoint" parent="." instance=ExtResource( 10 )]
 position = Vector2( -3603.42, 101.823 )
