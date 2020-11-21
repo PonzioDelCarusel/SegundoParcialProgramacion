@@ -88,7 +88,7 @@ tracks/2/keys = {
 "values": [ Vector2( 0.348193, 0.348193 ) ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=3]
 resource_name = "logoIdle"
 length = 3.0
 tracks/0/type = "value"
@@ -140,15 +140,15 @@ tracks/3/keys = {
 "values": [ false, true ]
 }
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 40
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=5]
 size = 100
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=6]
 size = 40
 font_data = ExtResource( 3 )
 
@@ -179,7 +179,7 @@ next/logoReset = "logoIdle"
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
 autoplay = "logoIdle"
-anims/logoIdle = SubResource( 6 )
+anims/logoIdle = SubResource( 3 )
 
 [node name="salir" type="Button" parent="."]
 anchor_left = 0.5
@@ -190,7 +190,7 @@ margin_left = 774.308
 margin_top = 611.149
 margin_right = 1194.31
 margin_bottom = 786.149
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "SALIR"
 script = ExtResource( 5 )
 __meta__ = {
@@ -206,7 +206,7 @@ margin_left = 700.014
 margin_top = 324.811
 margin_right = 1251.01
 margin_bottom = 554.811
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "JUGAR"
 script = ExtResource( 4 )
 __meta__ = {
@@ -219,7 +219,7 @@ margin_left = 25.0
 margin_top = 21.0
 margin_right = 264.0
 margin_bottom = 120.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 text = "CREDITOS"
 script = ExtResource( 4 )
 __meta__ = {

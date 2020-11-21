@@ -38,6 +38,7 @@ var fileName = "res://SaveScores.cfg"
 
 var bandera  = null
 var myPlayer = null
+var BASE_ACCEL = 1200000
 
 
 # Called when the node enters the scene tree for the first time.
