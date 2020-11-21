@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://fonts/xracer.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://images/BotonLevel2Click.png" type="Texture" id=2]
@@ -12,7 +12,8 @@
 [ext_resource path="res://images/BotonLevel2Idle.png" type="Texture" id=10]
 [ext_resource path="res://images/BotonLevel1Hover.png" type="Texture" id=11]
 [ext_resource path="res://images/BotonLevel1Click.png" type="Texture" id=12]
-[ext_resource path="res://sounds/buttonLevelsSound.wav" type="AudioStream" id=13]
+[ext_resource path="res://sounds/HeavenMusic.wav" type="AudioStream" id=13]
+[ext_resource path="res://images/HeavenMusic.jpg" type="Texture" id=14]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -25,6 +26,34 @@ font_data = ExtResource( 1 )
 [sub_resource type="DynamicFont" id=3]
 size = 55
 font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "HeavenMusic"
+length = 25.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("HeavenMusic:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5, 20.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("HeavenSound:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 5 )
@@ -162,8 +191,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="sonidoBoton" type="AudioStreamPlayer2D" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "HeavenMusic"
+anims/HeavenMusic = SubResource( 4 )
+
+[node name="HeavenSound" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 977.103, 587.33 )
 stream = ExtResource( 13 )
+
+[node name="HeavenMusic" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1256.96, 783.874 )
+texture = ExtResource( 14 )
 [connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]
 [connection signal="pressed" from="level1" to="." method="_on_button_pressed" binds= [ 1 ]]
 [connection signal="pressed" from="level2" to="." method="_on_button_pressed" binds= [ 2 ]]

@@ -49,8 +49,3 @@ func _on_Death_body_entered(body):
 	Globals.myPlayer.queue_free()
 	ReSpawn()
 	pass # Replace with function body.
-
-
-# warning-ignore:unused_argument
-func _on_Death3_body_entered(body):
-	pass # Replace with function body.
