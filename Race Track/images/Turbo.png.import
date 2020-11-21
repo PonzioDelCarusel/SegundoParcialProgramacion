@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PRUEBIS2.png-d972b74339231c750ab51ef8c5904d8f.stex"
+path="res://.import/Turbo.png-c026be3dd6aca7238495434edb7d49d5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/PRUEBIS2.png"
-dest_files=[ "res://.import/PRUEBIS2.png-d972b74339231c750ab51ef8c5904d8f.stex" ]
+source_file="res://images/Turbo.png"
+dest_files=[ "res://.import/Turbo.png-c026be3dd6aca7238495434edb7d49d5.stex" ]
 
 [params]
 
