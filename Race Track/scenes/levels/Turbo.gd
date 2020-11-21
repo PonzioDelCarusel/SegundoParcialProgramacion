@@ -13,7 +13,7 @@ func _ready():
 func _on_Turbo_body_entered(body):
 	if(body.is_in_group("player")):
 		print("turbo entered")
-		Globals.BASE_ACCEL = Globals.BASE_ACCEL * 2
+		Globals.BASE_ACCEL = Globals.BASE_ACCEL * 1.7
 		$turboImg.visible = false
 		print(Globals.BASE_ACCEL)
 		yield(get_tree().create_timer(2.0), "timeout")
